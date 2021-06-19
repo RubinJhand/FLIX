@@ -7,6 +7,9 @@ export default {
         primaryKey: true,
         type: Sequelize.INTEGER
       },
+      genre: {
+        type: Sequelize.STRING
+      },
       title: {
         type: Sequelize.STRING
       },
