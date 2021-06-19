@@ -4,6 +4,7 @@ import db from './dbInstance';
 const Media = db.sequelize.define(
   'media',
   {
+    genre: DataTypes.STRING,
     title: DataTypes.STRING,
     alt_title: DataTypes.STRING,
     tmdb_id: DataTypes.INTEGER,
@@ -16,10 +17,9 @@ const Media = db.sequelize.define(
     release_date: DataTypes.STRING,
     video_url: DataTypes.STRING
   },
-  { underscored: true }
+  { createdAt: 'created_at', updatedAt: 'updated_at' }
 );
 
-// Media.associate = (models) => {};
 Media.sync();
 
 export default Media;
