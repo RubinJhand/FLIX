@@ -1,47 +1,19 @@
 import '../../utils/env.js';
-import { readdirSync } from 'fs';
-import { basename as pathBasename, join } from 'path';
-import Sequelize from 'sequelize';
-import environmentVariables from '../config/config.js';
+import Media from './media.js';
 
-const basename = pathBasename(__filename);
-const env = process.env.NODE_ENV || 'development';
-const config = environmentVariables[env];
-const db = {};
+const models = {
+  Media
+};
 
-let sequelize;
-if (config.use_env_variable) {
-  sequelize = new Sequelize(process.env[config.use_env_variable], config);
-} else {
-  sequelize = new Sequelize(
-    config.database,
-    config.username,
-    config.password,
-    config
-  );
-}
+Media.findByPk(1).then((data) => console.log(data));
 
-readdirSync(__dirname)
-  .filter((file) => {
-    return (
-      file.indexOf('.') !== 0 && file !== basename && file.slice(-3) === '.js'
-    );
-  })
-  .forEach((file) => {
-    const model = require(join(__dirname, file))(
-      sequelize,
-      Sequelize.DataTypes
-    );
-    db[model.name] = model;
-  });
+console.log('index:', Media);
 
-Object.keys(db).forEach((modelName) => {
-  if (db[modelName].associate) {
-    db[modelName].associate(db);
+Object.entries(models).map(([, model]) => {
+  if (model?.associate) {
+    model.associate(models);
   }
+  return model;
 });
 
-db.sequelize = sequelize;
-db.Sequelize = Sequelize;
-
-export default db;
+export default models;
