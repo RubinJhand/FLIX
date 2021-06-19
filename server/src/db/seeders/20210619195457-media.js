@@ -3,6 +3,7 @@ export default {
     return await queryInterface.bulkInsert('media', [
       {
         title: 'The Conjuring: The Devil Made Me Do It',
+        genre: 'test only',
         alt_title: 'The Conjuring: The Devil Made Me Do It',
         tmdb_id: 423108,
         tv: false,
@@ -15,9 +16,12 @@ export default {
         poster_url:
           'https://image.tmdb.org/t/p/original/xbSuFiJbbBWCkyCCKIMfuDCA4yV.jpg',
         release_date: '2021-05-25',
-        video_url: 'G4JuopziR3Q'
+        video_url: 'G4JuopziR3Q',
+        created_at: '2020-01-01T01:0:00.000Z',
+        updated_at: '2020-01-01T01:0:00.000Z'
       },
       {
+        genre: 'test only',
         title: 'Cruella',
         alt_title: 'Cruella',
         tmdb_id: 337404,
@@ -31,9 +35,12 @@ export default {
         poster_url:
           'https://image.tmdb.org/t/p/original/rTh4K5uw9HypmpGslcKd4QfHl93.jpg',
         release_date: '2021-05-26',
-        video_url: 'G4JuopziR3Q'
+        video_url: 'G4JuopziR3Q',
+        created_at: '2020-01-01T01:0:00.000Z',
+        updated_at: '2020-01-01T01:0:00.000Z'
       },
       {
+        genre: 'test only',
         title: 'Wrath of Man',
         alt_title: 'Wrath of Man',
         tmdb_id: 637649,
@@ -47,9 +54,12 @@ export default {
         poster_url:
           'https://image.tmdb.org/t/p/original/M7SUK85sKjaStg4TKhlAVyGlz3.jpg',
         release_date: '2021-04-22',
-        video_url: 'G4JuopziR3Q'
+        video_url: 'G4JuopziR3Q',
+        created_at: '2020-01-01T01:0:00.000Z',
+        updated_at: '2020-01-01T01:0:00.000Z'
       },
       {
+        genre: 'test only',
         title: 'Endangered Species',
         alt_title: 'Endangered Species',
         tmdb_id: 817451,
@@ -63,9 +73,12 @@ export default {
         poster_url:
           'https://image.tmdb.org/t/p/original/ccsSqbpEqr2KK9eMvoeF8ERFCd5.jpg',
         release_date: '2021-05-27',
-        video_url: 'G4JuopziR3Q'
+        video_url: 'G4JuopziR3Q',
+        created_at: '2020-01-01T01:0:00.000Z',
+        updated_at: '2020-01-01T01:0:00.000Z'
       },
       {
+        genre: 'test only',
         title: 'Infinite',
         alt_title: 'Infinite',
         tmdb_id: 581726,
@@ -79,9 +92,12 @@ export default {
         poster_url:
           'https://image.tmdb.org/t/p/original/niw2AKHz6XmwiRMLWaoyAOAti0G.jpg',
         release_date: '2021-09-08',
-        video_url: 'G4JuopziR3Q'
+        video_url: 'G4JuopziR3Q',
+        created_at: '2020-01-01T01:0:00.000Z',
+        updated_at: '2020-01-01T01:0:00.000Z'
       },
       {
+        genre: 'test only',
         title: 'A Quiet Place Part II',
         alt_title: 'A Quiet Place Part II',
         tmdb_id: 520763,
@@ -95,9 +111,12 @@ export default {
         poster_url:
           'https://image.tmdb.org/t/p/original/4q2hz2m8hubgvijz8Ez0T2Os2Yv.jpg',
         release_date: '2021-05-21',
-        video_url: 'G4JuopziR3Q'
+        video_url: 'G4JuopziR3Q',
+        created_at: '2020-01-01T01:0:00.000Z',
+        updated_at: '2020-01-01T01:0:00.000Z'
       },
       {
+        genre: 'test only',
         title: 'Army of the Dead',
         alt_title: 'Army of the Dead',
         tmdb_id: 503736,
@@ -111,9 +130,12 @@ export default {
         backdrop_url:
           'https://image.tmdb.org/t/p/original/9WlJFhOSCPnaaSmsrv0B4zA8iUb.jpg',
         release_date: '2021-05-14',
-        video_url: 'G4JuopziR3Q'
+        video_url: 'G4JuopziR3Q',
+        created_at: '2020-01-01T01:0:00.000Z',
+        updated_at: '2020-01-01T01:0:00.000Z'
       },
       {
+        genre: 'test only',
         title: 'Mortal Kombat',
         alt_title: 'Mortal Kombat',
         tmdb_id: 460465,
@@ -127,9 +149,12 @@ export default {
         backdrop_url:
           'https://image.tmdb.org/t/p/original/9yBVqNruk6Ykrwc32qrK2TIE5xw.jpg',
         release_date: '2021-04-07',
-        video_url: 'G4JuopziR3Q'
+        video_url: 'G4JuopziR3Q',
+        created_at: '2020-01-01T01:0:00.000Z',
+        updated_at: '2020-01-01T01:0:00.000Z'
       },
       {
+        genre: 'test only',
         title: 'Flashback',
         alt_title: 'Flashback',
         tmdb_id: 522406,
@@ -143,9 +168,12 @@ export default {
         backdrop_url:
           'https://image.tmdb.org/t/p/original/bwdADfvTcWAkOpX9wDV7fG9XccW.jpg',
         release_date: '2021-06-03',
-        video_url: 'G4JuopziR3Q'
+        video_url: 'G4JuopziR3Q',
+        created_at: '2020-01-01T01:0:00.000Z',
+        updated_at: '2020-01-01T01:0:00.000Z'
       },
       {
+        genre: 'test only',
         title: 'Xtremo',
         alt_title: 'Xtreme',
         tmdb_id: 726429,
@@ -159,9 +187,12 @@ export default {
         backdrop_url:
           'https://image.tmdb.org/t/p/original/gGSm6ZmWtGazs2H1m0gOp7cx1ZZ.jpg',
         release_date: '2021-06-04',
-        video_url: 'G4JuopziR3Q'
+        video_url: 'G4JuopziR3Q',
+        created_at: '2020-01-01T01:0:00.000Z',
+        updated_at: '2020-01-01T01:0:00.000Z'
       },
       {
+        genre: 'test only',
         title: 'Godzilla vs. Kong',
         alt_title: 'Godzilla vs. Kong',
         tmdb_id: 399566,
@@ -175,9 +206,12 @@ export default {
         backdrop_url:
           'https://image.tmdb.org/t/p/original/inJjDhCjfhh3RtrJWBmmDqeuSYC.jpg',
         release_date: '2021-03-24',
-        video_url: 'G4JuopziR3Q'
+        video_url: 'G4JuopziR3Q',
+        created_at: '2020-01-01T01:0:00.000Z',
+        updated_at: '2020-01-01T01:0:00.000Z'
       },
       {
+        genre: 'test only',
         title: 'The Unholy',
         alt_title: 'The Unholy',
         tmdb_id: 632357,
@@ -191,9 +225,12 @@ export default {
         backdrop_url:
           'https://image.tmdb.org/t/p/original/jw6ASGRT2gi8EjCImpGtbiJ9NQ9.jpg',
         release_date: '2021-03-31',
-        video_url: 'G4JuopziR3Q'
+        video_url: 'G4JuopziR3Q',
+        created_at: '2020-01-01T01:0:00.000Z',
+        updated_at: '2020-01-01T01:0:00.000Z'
       },
       {
+        genre: 'test only',
         title: 'Awake',
         alt_title: 'Awake',
         tmdb_id: 615658,
@@ -207,9 +244,12 @@ export default {
         backdrop_url:
           'https://image.tmdb.org/t/p/original/3RMbkXS4ocMmoJyAD3ZsWbm32Kx.jpg',
         release_date: '2021-06-09',
-        video_url: 'G4JuopziR3Q'
+        video_url: 'G4JuopziR3Q',
+        created_at: '2020-01-01T01:0:00.000Z',
+        updated_at: '2020-01-01T01:0:00.000Z'
       },
       {
+        genre: 'test only',
         title: 'Spiral: From the Book of Saw',
         alt_title: 'Spiral: From the Book of Saw',
         tmdb_id: 602734,
@@ -223,9 +263,12 @@ export default {
         backdrop_url:
           'https://image.tmdb.org/t/p/original/7JENyUT8ABxcvrcijDBVpdjgCY9.jpg',
         release_date: '2021-05-12',
-        video_url: 'G4JuopziR3Q'
+        video_url: 'G4JuopziR3Q',
+        created_at: '2020-01-01T01:0:00.000Z',
+        updated_at: '2020-01-01T01:0:00.000Z'
       },
       {
+        genre: 'test only',
         title: "Tom Clancy's Without Remorse",
         alt_title: "Tom Clancy's Without Remorse",
         tmdb_id: 567189,
@@ -239,9 +282,12 @@ export default {
         backdrop_url:
           'https://image.tmdb.org/t/p/original/fPGeS6jgdLovQAKunNHX8l0avCy.jpg',
         release_date: '2021-04-29',
-        video_url: 'G4JuopziR3Q'
+        video_url: 'G4JuopziR3Q',
+        created_at: '2020-01-01T01:0:00.000Z',
+        updated_at: '2020-01-01T01:0:00.000Z'
       },
       {
+        genre: 'test only',
         title: 'Ferry',
         alt_title: 'Ferry',
         tmdb_id: 717192,
@@ -255,9 +301,12 @@ export default {
         backdrop_url:
           'https://image.tmdb.org/t/p/original/fejok33Ijc6SppiEU1cfwA9Mo2.jpg',
         release_date: '2021-05-14',
-        video_url: 'G4JuopziR3Q'
+        video_url: 'G4JuopziR3Q',
+        created_at: '2020-01-01T01:0:00.000Z',
+        updated_at: '2020-01-01T01:0:00.000Z'
       },
       {
+        genre: 'test only',
         title: 'Vanquish',
         alt_title: 'Vanquish',
         tmdb_id: 804435,
@@ -271,9 +320,12 @@ export default {
         backdrop_url:
           'https://image.tmdb.org/t/p/original/mYM8x2Atv4MaLulaV0KVJWI1Djv.jpg',
         release_date: '2021-04-16',
-        video_url: 'G4JuopziR3Q'
+        video_url: 'G4JuopziR3Q',
+        created_at: '2020-01-01T01:0:00.000Z',
+        updated_at: '2020-01-01T01:0:00.000Z'
       },
       {
+        genre: 'test only',
         title: 'The Virtuoso',
         alt_title: 'The Virtuoso',
         tmdb_id: 808023,
@@ -287,9 +339,12 @@ export default {
         backdrop_url:
           'https://image.tmdb.org/t/p/original/efrdAWS63s8TTWdrI2uNdIhn1dj.jpg',
         release_date: '2021-04-30',
-        video_url: 'G4JuopziR3Q'
+        video_url: 'G4JuopziR3Q',
+        created_at: '2020-01-01T01:0:00.000Z',
+        updated_at: '2020-01-01T01:0:00.000Z'
       },
       {
+        genre: 'test only',
         title: 'Nobody',
         alt_title: 'Nobody',
         tmdb_id: 615457,
@@ -303,9 +358,12 @@ export default {
         backdrop_url:
           'https://image.tmdb.org/t/p/original/u2J7HxrT9QtzIy37S5q3RdrzxXD.jpg',
         release_date: '2021-03-26',
-        video_url: 'G4JuopziR3Q'
+        video_url: 'G4JuopziR3Q',
+        created_at: '2020-01-01T01:0:00.000Z',
+        updated_at: '2020-01-01T01:0:00.000Z'
       },
       {
+        genre: 'test only',
         title: 'Those Who Wish Me Dead',
         alt_title: 'Those Who Wish Me Dead',
         tmdb_id: 578701,
@@ -319,9 +377,12 @@ export default {
         backdrop_url:
           'https://image.tmdb.org/t/p/original/ouOojiypBE6CD1aqcHPVq7cJf2R.jpg',
         release_date: '2021-05-05',
-        video_url: 'G4JuopziR3Q'
+        video_url: 'G4JuopziR3Q',
+        created_at: '2020-01-01T01:0:00.000Z',
+        updated_at: '2020-01-01T01:0:00.000Z'
       },
       {
+        genre: 'test only',
         title: 'Invincible',
         alt_title: 'Invincible',
         tmdb_id: 95557,
@@ -334,9 +395,12 @@ export default {
           'https://image.tmdb.org/t/p/original/6UH52Fmau8RPsMAbQbjwN3wJSCj.jpg',
         poster_url:
           'https://image.tmdb.org/t/p/original/yDWJYRAwMNKbIYT8ZB33qy84uzO.jpg',
-        release_date: '2021-03-26'
+        release_date: '2021-03-26',
+        created_at: '2020-01-01T01:0:00.000Z',
+        updated_at: '2020-01-01T01:0:00.000Z'
       },
       {
+        genre: 'test only',
         title: 'Vikings',
         alt_title: 'Vikings',
         tmdb_id: 44217,
@@ -350,9 +414,12 @@ export default {
         poster_url:
           'https://image.tmdb.org/t/p/original/bQLrHIRNEkE3PdIWQrZHynQZazu.jpg',
         release_date: '2013-03-03',
-        video_url: 'G4JuopziR3Q'
+        video_url: 'G4JuopziR3Q',
+        created_at: '2020-01-01T01:0:00.000Z',
+        updated_at: '2020-01-01T01:0:00.000Z'
       },
       {
+        genre: 'test only',
         title: 'The Boys',
         alt_title: 'The Boys',
         tmdb_id: 76479,
@@ -366,9 +433,12 @@ export default {
         poster_url:
           'https://image.tmdb.org/t/p/original/mY7SeH4HFFxW1hiI6cWuwCRKptN.jpg',
         release_date: '2019-07-25',
-        video_url: 'G4JuopziR3Q'
+        video_url: 'G4JuopziR3Q',
+        created_at: '2020-01-01T01:0:00.000Z',
+        updated_at: '2020-01-01T01:0:00.000Z'
       },
       {
+        genre: 'test only',
         title: 'De viaje con los Derbez',
         alt_title: 'Traveling with the Derbez',
         tmdb_id: 94667,
@@ -382,9 +452,12 @@ export default {
         poster_url:
           'https://image.tmdb.org/t/p/original/o1lAdiCYmCuDb25wyBCJQMeUhVA.jpg',
         release_date: '2019-10-18',
-        video_url: 'G4JuopziR3Q'
+        video_url: 'G4JuopziR3Q',
+        created_at: '2020-01-01T01:0:00.000Z',
+        updated_at: '2020-01-01T01:0:00.000Z'
       },
       {
+        genre: 'test only',
         title: 'El internado: Las Cumbres',
         alt_title: 'The Boarding School: Las Cumbres',
         tmdb_id: 97513,
@@ -398,9 +471,12 @@ export default {
         poster_url:
           'https://image.tmdb.org/t/p/original/kl07N07l4XNjXF48oujzWXs40Dw.jpg',
         release_date: '2021-02-19',
-        video_url: 'G4JuopziR3Q'
+        video_url: 'G4JuopziR3Q',
+        created_at: '2020-01-01T01:0:00.000Z',
+        updated_at: '2020-01-01T01:0:00.000Z'
       },
       {
+        genre: 'test only',
         title: 'The Man in the High Castle',
         alt_title: 'The Man in the High Castle',
         tmdb_id: 62017,
@@ -414,9 +490,12 @@ export default {
         poster_url:
           'https://image.tmdb.org/t/p/original/xhoDZbMNeyCA0BGPZQsdIiO43Dp.jpg',
         release_date: '2015-01-15',
-        video_url: 'G4JuopziR3Q'
+        video_url: 'G4JuopziR3Q',
+        created_at: '2020-01-01T01:0:00.000Z',
+        updated_at: '2020-01-01T01:0:00.000Z'
       },
       {
+        genre: 'test only',
         title: 'The Expanse',
         alt_title: 'The Expanse',
         tmdb_id: 63639,
@@ -430,9 +509,12 @@ export default {
         poster_url:
           'https://image.tmdb.org/t/p/original/5vQlVWkIMPhZ88OWchJsgwGEK9.jpg',
         release_date: '2015-12-14',
-        video_url: 'G4JuopziR3Q'
+        video_url: 'G4JuopziR3Q',
+        created_at: '2020-01-01T01:0:00.000Z',
+        updated_at: '2020-01-01T01:0:00.000Z'
       },
       {
+        genre: 'test only',
         title: 'The Wilds',
         alt_title: 'The Wilds',
         tmdb_id: 113367,
@@ -446,9 +528,12 @@ export default {
         poster_url:
           'https://image.tmdb.org/t/p/original/gHBtyMdHbWoM3tpM8VZymer8HfF.jpg',
         release_date: '2020-12-11',
-        video_url: 'G4JuopziR3Q'
+        video_url: 'G4JuopziR3Q',
+        created_at: '2020-01-01T01:0:00.000Z',
+        updated_at: '2020-01-01T01:0:00.000Z'
       },
       {
+        genre: 'test only',
         title: 'Bosch',
         alt_title: 'Bosch',
         tmdb_id: 60585,
@@ -462,9 +547,12 @@ export default {
         poster_url:
           'https://image.tmdb.org/t/p/original/fmBAmAyR6aMo1HAutV0oZ8Y7emb.jpg',
         release_date: '2015-02-13',
-        video_url: 'G4JuopziR3Q'
+        video_url: 'G4JuopziR3Q',
+        created_at: '2020-01-01T01:0:00.000Z',
+        updated_at: '2020-01-01T01:0:00.000Z'
       },
       {
+        genre: 'test only',
         title: 'ゆるキャン△',
         alt_title: 'Yuru Camp △ Live Action',
         tmdb_id: 95623,
@@ -478,9 +566,12 @@ export default {
         poster_url:
           'https://image.tmdb.org/t/p/original/gJDaabuOo6Gah2u23E9qI4z8eIY.jpg',
         release_date: '2020-01-09',
-        video_url: 'G4JuopziR3Q'
+        video_url: 'G4JuopziR3Q',
+        created_at: '2020-01-01T01:0:00.000Z',
+        updated_at: '2020-01-01T01:0:00.000Z'
       },
       {
+        genre: 'test only',
         title: 'かくしごと',
         alt_title: 'Kakushigoto',
         tmdb_id: 95433,
@@ -494,9 +585,12 @@ export default {
         poster_url:
           'https://image.tmdb.org/t/p/original/odtryn9XCRIo33oLDaAaaTNgiuQ.jpg',
         release_date: '2020-04-02',
-        video_url: 'G4JuopziR3Q'
+        video_url: 'G4JuopziR3Q',
+        created_at: '2020-01-01T01:0:00.000Z',
+        updated_at: '2020-01-01T01:0:00.000Z'
       },
       {
+        genre: 'test only',
         title: 'La Jauría',
         alt_title: 'La Jauría',
         tmdb_id: 104819,
@@ -510,9 +604,12 @@ export default {
         poster_url:
           'https://image.tmdb.org/t/p/original/siTwS1bBCzFFzjBEyoZg51jsfmv.jpg',
         release_date: '2020-07-10',
-        video_url: 'G4JuopziR3Q'
+        video_url: 'G4JuopziR3Q',
+        created_at: '2020-01-01T01:0:00.000Z',
+        updated_at: '2020-01-01T01:0:00.000Z'
       },
       {
+        genre: 'test only',
         title: 'キングスレイド 意志を継ぐものたち',
         alt_title: "King's Raid: Successors of the Will",
         tmdb_id: 102871,
@@ -526,9 +623,12 @@ export default {
         poster_url:
           'https://image.tmdb.org/t/p/original/A5rjiJcRwNuGQxYehOrsngku8e7.jpg',
         release_date: '2020-10-03',
-        video_url: 'G4JuopziR3Q'
+        video_url: 'G4JuopziR3Q',
+        created_at: '2020-01-01T01:0:00.000Z',
+        updated_at: '2020-01-01T01:0:00.000Z'
       },
       {
+        genre: 'test only',
         title: 'どろろ',
         alt_title: 'Dororo',
         tmdb_id: 83100,
@@ -542,9 +642,12 @@ export default {
         poster_url:
           'https://image.tmdb.org/t/p/original/jyFHtqYeVvc2A9nLhFGvM49xGPg.jpg',
         release_date: '2019-01-07',
-        video_url: 'G4JuopziR3Q'
+        video_url: 'G4JuopziR3Q',
+        created_at: '2020-01-01T01:0:00.000Z',
+        updated_at: '2020-01-01T01:0:00.000Z'
       },
       {
+        genre: 'test only',
         title: "Tom Clancy's Jack Ryan",
         alt_title: "Tom Clancy's Jack Ryan",
         tmdb_id: 73375,
@@ -558,9 +661,12 @@ export default {
         poster_url:
           'https://image.tmdb.org/t/p/original/1raUrQr8Y2tSYjTDbk8wfWGKTmX.jpg',
         release_date: '2018-08-30',
-        video_url: 'G4JuopziR3Q'
+        video_url: 'G4JuopziR3Q',
+        created_at: '2020-01-01T01:0:00.000Z',
+        updated_at: '2020-01-01T01:0:00.000Z'
       },
       {
+        genre: 'test only',
         title: 'El Cid',
         alt_title: 'El Cid',
         tmdb_id: 94167,
@@ -574,9 +680,12 @@ export default {
         poster_url:
           'https://image.tmdb.org/t/p/original/jTDpdYASFxX45GWkGPHmS74BNvz.jpg',
         release_date: '2020-12-18',
-        video_url: 'G4JuopziR3Q'
+        video_url: 'G4JuopziR3Q',
+        created_at: '2020-01-01T01:0:00.000Z',
+        updated_at: '2020-01-01T01:0:00.000Z'
       },
       {
+        genre: 'test only',
         title: 'Utopia',
         alt_title: 'Utopia',
         tmdb_id: 78903,
@@ -590,9 +699,12 @@ export default {
         poster_url:
           'https://image.tmdb.org/t/p/original/iSimgRwq58yUz1n8bfmWcWirQkd.jpg',
         release_date: '2020-09-25',
-        video_url: 'G4JuopziR3Q'
+        video_url: 'G4JuopziR3Q',
+        created_at: '2020-01-01T01:0:00.000Z',
+        updated_at: '2020-01-01T01:0:00.000Z'
       },
       {
+        genre: 'test only',
         title: 'Súbete a mi moto',
         alt_title: 'Súbete a mi moto',
         tmdb_id: 111119,
@@ -606,9 +718,12 @@ export default {
         poster_url:
           'https://image.tmdb.org/t/p/original/9Fsee2p5qiac3GGmQjRUOK8oCp0.jpg',
         release_date: '2020-10-09',
-        video_url: 'G4JuopziR3Q'
+        video_url: 'G4JuopziR3Q',
+        created_at: '2020-01-01T01:0:00.000Z',
+        updated_at: '2020-01-01T01:0:00.000Z'
       },
       {
+        genre: 'test only',
         title: 'Carnival Row',
         alt_title: 'Carnival Row',
         tmdb_id: 90027,
@@ -622,9 +737,12 @@ export default {
         poster_url:
           'https://image.tmdb.org/t/p/original/3UupR0nS9R6Di9letdz4ftX95GF.jpg',
         release_date: '2019-08-29',
-        video_url: 'G4JuopziR3Q'
+        video_url: 'G4JuopziR3Q',
+        created_at: '2020-01-01T01:0:00.000Z',
+        updated_at: '2020-01-01T01:0:00.000Z'
       },
       {
+        genre: 'test only',
         title: 'La que se avecina',
         alt_title: 'La que se avecina',
         tmdb_id: 35338,
@@ -638,7 +756,9 @@ export default {
         poster_url:
           'https://image.tmdb.org/t/p/original/76GUieAvgHwH07Yd7kR86iay3dx.jpg',
         release_date: '2007-04-22',
-        video_url: 'G4JuopziR3Q'
+        video_url: 'G4JuopziR3Q',
+        created_at: '2020-01-01T01:0:00.000Z',
+        updated_at: '2020-01-01T01:0:00.000Z'
       }
     ]);
   },
