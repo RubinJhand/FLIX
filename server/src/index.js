@@ -1,14 +1,17 @@
-import './utils/env.js';
-import express from 'express';
+import express, { json, urlencoded } from 'express';
 import { createServer } from 'http';
+import cors from 'cors';
+
+import { CORS_ORIGIN } from './constants/cors.js';
+import { PORT } from './constants/port.js';
 
 const app = express();
 const server = createServer(app);
 
-// ----- Constants -----
-const ENV = process.env;
-
-const PORT = ENV.PORT;
+// ----- API setup -----
+app.use(json());
+app.use(urlencoded({ extended: true }));
+app.use(cors(CORS_ORIGIN));
 
 // ----- Routes -----
 app.get('/', (req, res) => {
