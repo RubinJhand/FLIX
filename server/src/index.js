@@ -1,3 +1,4 @@
+import './utils/env.js';
 import express from 'express';
 import { createServer } from 'http';
 
@@ -5,7 +6,9 @@ const app = express();
 const server = createServer(app);
 
 // ----- Constants -----
-const PORT = 3000;
+const ENV = process.env;
+
+const PORT = ENV.PORT;
 
 // ----- Routes -----
 app.get('/', (req, res) => {
