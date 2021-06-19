@@ -5,6 +5,7 @@ export default (sequelize, DataTypes) => {
     'media',
     {
       title: DataTypes.STRING,
+      alt_title: DataTypes.STRING,
       tmdb_id: DataTypes.INTEGER,
       tv: DataTypes.BOOLEAN,
       movie: DataTypes.BOOLEAN,

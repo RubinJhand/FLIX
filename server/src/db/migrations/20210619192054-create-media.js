@@ -12,6 +12,9 @@ module.exports = {
       title: {
         type: Sequelize.STRING
       },
+      alt_title: {
+        type: Sequelize.STRING
+      },
       tmdb_id: {
         type: Sequelize.INTEGER
       },
