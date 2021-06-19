@@ -15,6 +15,6 @@ export default (sequelize, DataTypes) => {
       release_date: DataTypes.STRING,
       video_url: DataTypes.STRING
     },
-    { createdAt: 'created_at', updatedAt: 'updated_at' }
+    { underscored: true }
   );
 };
