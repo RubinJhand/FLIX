@@ -1,8 +1,8 @@
 import express from 'express';
-import http from 'http';
+import { createServer } from 'http';
 
 const app = express();
-const server = http.createServer(app);
+const server = createServer(app);
 
 // ----- Constants -----
 const PORT = 3000;
