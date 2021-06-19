@@ -2,10 +2,10 @@
   "name": "movie-app-server",
   "version": "1.0.0",
   "description": "",
-  "main": "src/index.js",
+  "main": "src/server.js",
   "scripts": {
-    "start": "node src/index.js",
-    "dev": "nodemon -L src/index.js --exec babel-node",
+    "start": "node src/server.js",
+    "dev": "nodemon -L src/server.js --exec babel-node",
     "db:reset": "npx sequelize-cli db:drop && npx sequelize-cli db:create && npx sequelize-cli db:migrate "
   },
   "keywords": [
