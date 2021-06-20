@@ -35,10 +35,10 @@ export default {
         type: Sequelize.TEXT
       },
       backdrop_url: {
-        type: Sequelize.STRING
+        type: Sequelize.TEXT
       },
       poster_url: {
-        type: Sequelize.STRING
+        type: Sequelize.TEXT
       },
       release_date: {
         allowNull: true,
@@ -58,7 +58,7 @@ export default {
       },
       network_logo: {
         allowNull: true,
-        type: Sequelize.STRING
+        type: Sequelize.TEXT
       },
       num_seasons: {
         allowNull: true,
@@ -74,7 +74,7 @@ export default {
       },
       homepage: {
         allowNull: true,
-        type: Sequelize.STRING
+        type: Sequelize.TEXT
       },
       tagline: {
         allowNull: true,
