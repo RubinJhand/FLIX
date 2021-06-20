@@ -21,14 +21,20 @@ export const mediaShowAll = async (req, res) => {
 
 export const mediaShowOne = async (req, res) => {
   const { id } = req.params;
-  const mediaById = await mediaFindById(id);
+  const mediaById = await mediaFindAll({ where: { id } });
   const { data } = mediaById;
 
   return res.json({ data });
 };
 
 export const mediaShowTv = async (req, res) => {
-  const mediaShowTv = await mediaFindAll({ where: { tv: true } });
+  const mediaShowTv = await mediaFindAll({
+    where: { tv: true },
+    order: [
+      ['release_date', 'DESC'],
+      ['last_aired', 'ASC']
+    ]
+  });
 
   const { redirect, data } = mediaShowTv;
 

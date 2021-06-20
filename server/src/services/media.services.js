@@ -2,7 +2,6 @@ import models from '../db/models';
 import { isUpdateDb, newMediaModelData } from '../helpers';
 
 export const mediaFindAll = async (options) => {
-  console.log('find all services');
   try {
     const mediaData = await models.Media.findAll(options);
     const lastUpdate = mediaData[0]?.created_at;

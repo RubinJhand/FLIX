@@ -1,13 +1,6 @@
 import { Op } from 'sequelize';
 
-import {
-  mediaFindAll,
-  mediaFindById,
-  mediaBulkCreate,
-  mediaDestroy
-} from '../services';
-
-import models from '../db/models';
+import { mediaFindAll } from '../services';
 
 export const categoryShowAll = async (req, res) => {
   const { genre } = req.params;
