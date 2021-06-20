@@ -5,10 +5,6 @@ const models = {
   Media
 };
 
-Media.findByPk(1).then((data) => console.log(data));
-
-console.log('index:', Media);
-
 Object.entries(models).map(([, model]) => {
   if (model?.associate) {
     model.associate(models);

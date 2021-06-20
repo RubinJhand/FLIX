@@ -1,5 +1,4 @@
 import { Sequelize } from 'sequelize';
-// import path from 'path';
 
 import environmentVariables from '../config/config.js';
 
