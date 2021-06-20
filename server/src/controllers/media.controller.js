@@ -1,69 +1,58 @@
-import '../utils/env.js';
-import moment from 'moment';
+import { DB_REFRESH_PATH, API_CURRENT_VERSION } from '../constants';
 
-import { DB_REFRESH_PATH } from '../constants/apiVersion.js';
-import models from '../db/models';
+import {
+  mediaFindAll,
+  mediaFindById,
+  mediaBulkCreate,
+  mediaDestroy
+} from '../services';
 
-// i have jokes. funny.
-const numberOfDaysBetweenUpdateOfDatabase = 1;
+export const mediaShowAll = async (req, res) => {
+  try {
+    const allMedia = await mediaFindAll();
+    const { redirect, data } = allMedia;
 
-export const mediaIndex = async (req, res) => {
-  await models.Media.findAll()
-    .then((data) => {
-      const lastUpdate = data[0]?.created_at;
-      const today = moment();
-      const amountOfDays = today.diff(lastUpdate, 'days');
-      console.log(data.length);
-
-      if (amountOfDays > numberOfDaysBetweenUpdateOfDatabase) {
-        return res.redirect(`${DB_REFRESH_PATH}/delete`);
-      }
-
-      if (data.length) return res.json({ data });
-
-      return res.redirect(`${DB_REFRESH_PATH}/delete`);
-    })
-    .catch((error) => {
-      return res.json({
-        message: `Error: ${error.message}`
-      });
-    });
+    if (redirect) return res.redirect(`${DB_REFRESH_PATH}/delete`);
+    return res.json({ data });
+  } catch (error) {
+    console.log('Show all Error:', error);
+  }
 };
 
-export const mediaShow = async (req, res) => {
+export const mediaShowOne = async (req, res) => {
   const { id } = req.params;
+  const mediaById = await mediaFindById(id);
+  const { data } = mediaById;
 
-  await models.Media.findByPk(id)
-    .then((data) => {
-      return res.json({ data });
-    })
-    .catch((error) => {
-      return res.json({
-        message: `Error: ${error.message}`
-      });
-    });
+  return res.json({ data });
 };
 
 export const mediaShowTv = async (req, res) => {
-  await models.Media.findAll({ where: { tv: true } })
-    .then((data) => {
-      return res.json({ data });
-    })
-    .catch((error) => {
-      return res.json({
-        message: `Error: ${error.message}`
-      });
-    });
+  const mediaShowTv = await mediaFindAll({ where: { tv: true } });
+
+  const { redirect, data } = mediaShowTv;
+
+  if (redirect) return res.redirect(`${DB_REFRESH_PATH}/delete`);
+  return res.json({ data });
 };
 
 export const mediaShowMovie = async (req, res) => {
-  await models.Media.findAll({ where: { movie: true } })
-    .then((data) => {
-      return res.json({ data });
-    })
-    .catch((error) => {
-      return res.json({
-        message: `Error: ${error.message}`
-      });
-    });
+  const mediaShowMovies = await mediaFindAll({ where: { tv: true } });
+
+  const { redirect, data } = mediaShowMovies;
+
+  if (redirect) return res.redirect(`${DB_REFRESH_PATH}/delete`);
+  return res.json({ data });
+};
+
+export const mediaCreateBulk = async (req, res) => {
+  await mediaBulkCreate().then(() => {
+    return res.redirect(`${API_CURRENT_VERSION}/media`);
+  });
+};
+
+export const mediaDeleteAll = async (req, res) => {
+  await mediaDestroy().then(() => {
+    return res.redirect(`${DB_REFRESH_PATH}/create`);
+  });
 };
