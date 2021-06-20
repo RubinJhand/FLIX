@@ -10,6 +10,9 @@ export default {
       genre: {
         type: Sequelize.STRING
       },
+      categories: {
+        type: Sequelize.STRING
+      },
       title: {
         type: Sequelize.STRING
       },
@@ -38,9 +41,47 @@ export default {
         type: Sequelize.STRING
       },
       release_date: {
+        allowNull: true,
         type: Sequelize.STRING
       },
-      video_url: {
+      last_aired: {
+        allowNull: true,
+        type: Sequelize.STRING
+      },
+      runtime: {
+        allowNull: true,
+        type: Sequelize.INTEGER
+      },
+      revenue: {
+        allowNull: true,
+        type: Sequelize.STRING
+      },
+      network_logo: {
+        allowNull: true,
+        type: Sequelize.STRING
+      },
+      num_seasons: {
+        allowNull: true,
+        type: Sequelize.INTEGER
+      },
+      num_episodes: {
+        allowNull: true,
+        type: Sequelize.INTEGER
+      },
+      in_production: {
+        allowNull: true,
+        type: Sequelize.BOOLEAN
+      },
+      homepage: {
+        allowNull: true,
+        type: Sequelize.STRING
+      },
+      tagline: {
+        allowNull: true,
+        type: Sequelize.STRING
+      },
+      youtube_key: {
+        allowNull: true,
         type: Sequelize.STRING
       },
       created_at: {

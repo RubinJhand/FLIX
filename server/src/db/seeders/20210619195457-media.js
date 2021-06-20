@@ -16,7 +16,7 @@ export default {
         poster_url:
           'https://image.tmdb.org/t/p/original/xbSuFiJbbBWCkyCCKIMfuDCA4yV.jpg',
         release_date: '2021-05-25',
-        video_url: 'G4JuopziR3Q',
+        youtube_key: 'G4JuopziR3Q',
         created_at: '2020-01-01T01:0:00.000Z',
         updated_at: '2020-01-01T01:0:00.000Z'
       },
@@ -35,7 +35,7 @@ export default {
         poster_url:
           'https://image.tmdb.org/t/p/original/rTh4K5uw9HypmpGslcKd4QfHl93.jpg',
         release_date: '2021-05-26',
-        video_url: 'G4JuopziR3Q',
+        youtube_key: 'G4JuopziR3Q',
         created_at: '2020-01-01T01:0:00.000Z',
         updated_at: '2020-01-01T01:0:00.000Z'
       },
@@ -54,7 +54,7 @@ export default {
         poster_url:
           'https://image.tmdb.org/t/p/original/M7SUK85sKjaStg4TKhlAVyGlz3.jpg',
         release_date: '2021-04-22',
-        video_url: 'G4JuopziR3Q',
+        youtube_key: 'G4JuopziR3Q',
         created_at: '2020-01-01T01:0:00.000Z',
         updated_at: '2020-01-01T01:0:00.000Z'
       },
@@ -73,7 +73,7 @@ export default {
         poster_url:
           'https://image.tmdb.org/t/p/original/ccsSqbpEqr2KK9eMvoeF8ERFCd5.jpg',
         release_date: '2021-05-27',
-        video_url: 'G4JuopziR3Q',
+        youtube_key: 'G4JuopziR3Q',
         created_at: '2020-01-01T01:0:00.000Z',
         updated_at: '2020-01-01T01:0:00.000Z'
       },
@@ -92,7 +92,7 @@ export default {
         poster_url:
           'https://image.tmdb.org/t/p/original/niw2AKHz6XmwiRMLWaoyAOAti0G.jpg',
         release_date: '2021-09-08',
-        video_url: 'G4JuopziR3Q',
+        youtube_key: 'G4JuopziR3Q',
         created_at: '2020-01-01T01:0:00.000Z',
         updated_at: '2020-01-01T01:0:00.000Z'
       },
@@ -111,7 +111,7 @@ export default {
         poster_url:
           'https://image.tmdb.org/t/p/original/4q2hz2m8hubgvijz8Ez0T2Os2Yv.jpg',
         release_date: '2021-05-21',
-        video_url: 'G4JuopziR3Q',
+        youtube_key: 'G4JuopziR3Q',
         created_at: '2020-01-01T01:0:00.000Z',
         updated_at: '2020-01-01T01:0:00.000Z'
       },
@@ -130,7 +130,7 @@ export default {
         backdrop_url:
           'https://image.tmdb.org/t/p/original/9WlJFhOSCPnaaSmsrv0B4zA8iUb.jpg',
         release_date: '2021-05-14',
-        video_url: 'G4JuopziR3Q',
+        youtube_key: 'G4JuopziR3Q',
         created_at: '2020-01-01T01:0:00.000Z',
         updated_at: '2020-01-01T01:0:00.000Z'
       },
@@ -149,7 +149,7 @@ export default {
         backdrop_url:
           'https://image.tmdb.org/t/p/original/9yBVqNruk6Ykrwc32qrK2TIE5xw.jpg',
         release_date: '2021-04-07',
-        video_url: 'G4JuopziR3Q',
+        youtube_key: 'G4JuopziR3Q',
         created_at: '2020-01-01T01:0:00.000Z',
         updated_at: '2020-01-01T01:0:00.000Z'
       },
@@ -168,7 +168,7 @@ export default {
         backdrop_url:
           'https://image.tmdb.org/t/p/original/bwdADfvTcWAkOpX9wDV7fG9XccW.jpg',
         release_date: '2021-06-03',
-        video_url: 'G4JuopziR3Q',
+        youtube_key: 'G4JuopziR3Q',
         created_at: '2020-01-01T01:0:00.000Z',
         updated_at: '2020-01-01T01:0:00.000Z'
       },
@@ -187,7 +187,7 @@ export default {
         backdrop_url:
           'https://image.tmdb.org/t/p/original/gGSm6ZmWtGazs2H1m0gOp7cx1ZZ.jpg',
         release_date: '2021-06-04',
-        video_url: 'G4JuopziR3Q',
+        youtube_key: 'G4JuopziR3Q',
         created_at: '2020-01-01T01:0:00.000Z',
         updated_at: '2020-01-01T01:0:00.000Z'
       },
@@ -206,7 +206,7 @@ export default {
         backdrop_url:
           'https://image.tmdb.org/t/p/original/inJjDhCjfhh3RtrJWBmmDqeuSYC.jpg',
         release_date: '2021-03-24',
-        video_url: 'G4JuopziR3Q',
+        youtube_key: 'G4JuopziR3Q',
         created_at: '2020-01-01T01:0:00.000Z',
         updated_at: '2020-01-01T01:0:00.000Z'
       },
@@ -225,7 +225,7 @@ export default {
         backdrop_url:
           'https://image.tmdb.org/t/p/original/jw6ASGRT2gi8EjCImpGtbiJ9NQ9.jpg',
         release_date: '2021-03-31',
-        video_url: 'G4JuopziR3Q',
+        youtube_key: 'G4JuopziR3Q',
         created_at: '2020-01-01T01:0:00.000Z',
         updated_at: '2020-01-01T01:0:00.000Z'
       },
@@ -244,7 +244,7 @@ export default {
         backdrop_url:
           'https://image.tmdb.org/t/p/original/3RMbkXS4ocMmoJyAD3ZsWbm32Kx.jpg',
         release_date: '2021-06-09',
-        video_url: 'G4JuopziR3Q',
+        youtube_key: 'G4JuopziR3Q',
         created_at: '2020-01-01T01:0:00.000Z',
         updated_at: '2020-01-01T01:0:00.000Z'
       },
@@ -263,7 +263,7 @@ export default {
         backdrop_url:
           'https://image.tmdb.org/t/p/original/7JENyUT8ABxcvrcijDBVpdjgCY9.jpg',
         release_date: '2021-05-12',
-        video_url: 'G4JuopziR3Q',
+        youtube_key: 'G4JuopziR3Q',
         created_at: '2020-01-01T01:0:00.000Z',
         updated_at: '2020-01-01T01:0:00.000Z'
       },
@@ -282,7 +282,7 @@ export default {
         backdrop_url:
           'https://image.tmdb.org/t/p/original/fPGeS6jgdLovQAKunNHX8l0avCy.jpg',
         release_date: '2021-04-29',
-        video_url: 'G4JuopziR3Q',
+        youtube_key: 'G4JuopziR3Q',
         created_at: '2020-01-01T01:0:00.000Z',
         updated_at: '2020-01-01T01:0:00.000Z'
       },
@@ -301,7 +301,7 @@ export default {
         backdrop_url:
           'https://image.tmdb.org/t/p/original/fejok33Ijc6SppiEU1cfwA9Mo2.jpg',
         release_date: '2021-05-14',
-        video_url: 'G4JuopziR3Q',
+        youtube_key: 'G4JuopziR3Q',
         created_at: '2020-01-01T01:0:00.000Z',
         updated_at: '2020-01-01T01:0:00.000Z'
       },
@@ -320,7 +320,7 @@ export default {
         backdrop_url:
           'https://image.tmdb.org/t/p/original/mYM8x2Atv4MaLulaV0KVJWI1Djv.jpg',
         release_date: '2021-04-16',
-        video_url: 'G4JuopziR3Q',
+        youtube_key: 'G4JuopziR3Q',
         created_at: '2020-01-01T01:0:00.000Z',
         updated_at: '2020-01-01T01:0:00.000Z'
       },
@@ -339,7 +339,7 @@ export default {
         backdrop_url:
           'https://image.tmdb.org/t/p/original/efrdAWS63s8TTWdrI2uNdIhn1dj.jpg',
         release_date: '2021-04-30',
-        video_url: 'G4JuopziR3Q',
+        youtube_key: 'G4JuopziR3Q',
         created_at: '2020-01-01T01:0:00.000Z',
         updated_at: '2020-01-01T01:0:00.000Z'
       },
@@ -358,7 +358,7 @@ export default {
         backdrop_url:
           'https://image.tmdb.org/t/p/original/u2J7HxrT9QtzIy37S5q3RdrzxXD.jpg',
         release_date: '2021-03-26',
-        video_url: 'G4JuopziR3Q',
+        youtube_key: 'G4JuopziR3Q',
         created_at: '2020-01-01T01:0:00.000Z',
         updated_at: '2020-01-01T01:0:00.000Z'
       },
@@ -377,7 +377,7 @@ export default {
         backdrop_url:
           'https://image.tmdb.org/t/p/original/ouOojiypBE6CD1aqcHPVq7cJf2R.jpg',
         release_date: '2021-05-05',
-        video_url: 'G4JuopziR3Q',
+        youtube_key: 'G4JuopziR3Q',
         created_at: '2020-01-01T01:0:00.000Z',
         updated_at: '2020-01-01T01:0:00.000Z'
       },
@@ -414,7 +414,7 @@ export default {
         poster_url:
           'https://image.tmdb.org/t/p/original/bQLrHIRNEkE3PdIWQrZHynQZazu.jpg',
         release_date: '2013-03-03',
-        video_url: 'G4JuopziR3Q',
+        youtube_key: 'G4JuopziR3Q',
         created_at: '2020-01-01T01:0:00.000Z',
         updated_at: '2020-01-01T01:0:00.000Z'
       },
@@ -433,7 +433,7 @@ export default {
         poster_url:
           'https://image.tmdb.org/t/p/original/mY7SeH4HFFxW1hiI6cWuwCRKptN.jpg',
         release_date: '2019-07-25',
-        video_url: 'G4JuopziR3Q',
+        youtube_key: 'G4JuopziR3Q',
         created_at: '2020-01-01T01:0:00.000Z',
         updated_at: '2020-01-01T01:0:00.000Z'
       },
@@ -452,7 +452,7 @@ export default {
         poster_url:
           'https://image.tmdb.org/t/p/original/o1lAdiCYmCuDb25wyBCJQMeUhVA.jpg',
         release_date: '2019-10-18',
-        video_url: 'G4JuopziR3Q',
+        youtube_key: 'G4JuopziR3Q',
         created_at: '2020-01-01T01:0:00.000Z',
         updated_at: '2020-01-01T01:0:00.000Z'
       },
@@ -471,7 +471,7 @@ export default {
         poster_url:
           'https://image.tmdb.org/t/p/original/kl07N07l4XNjXF48oujzWXs40Dw.jpg',
         release_date: '2021-02-19',
-        video_url: 'G4JuopziR3Q',
+        youtube_key: 'G4JuopziR3Q',
         created_at: '2020-01-01T01:0:00.000Z',
         updated_at: '2020-01-01T01:0:00.000Z'
       },
@@ -490,7 +490,7 @@ export default {
         poster_url:
           'https://image.tmdb.org/t/p/original/xhoDZbMNeyCA0BGPZQsdIiO43Dp.jpg',
         release_date: '2015-01-15',
-        video_url: 'G4JuopziR3Q',
+        youtube_key: 'G4JuopziR3Q',
         created_at: '2020-01-01T01:0:00.000Z',
         updated_at: '2020-01-01T01:0:00.000Z'
       },
@@ -509,7 +509,7 @@ export default {
         poster_url:
           'https://image.tmdb.org/t/p/original/5vQlVWkIMPhZ88OWchJsgwGEK9.jpg',
         release_date: '2015-12-14',
-        video_url: 'G4JuopziR3Q',
+        youtube_key: 'G4JuopziR3Q',
         created_at: '2020-01-01T01:0:00.000Z',
         updated_at: '2020-01-01T01:0:00.000Z'
       },
@@ -528,7 +528,7 @@ export default {
         poster_url:
           'https://image.tmdb.org/t/p/original/gHBtyMdHbWoM3tpM8VZymer8HfF.jpg',
         release_date: '2020-12-11',
-        video_url: 'G4JuopziR3Q',
+        youtube_key: 'G4JuopziR3Q',
         created_at: '2020-01-01T01:0:00.000Z',
         updated_at: '2020-01-01T01:0:00.000Z'
       },
@@ -547,7 +547,7 @@ export default {
         poster_url:
           'https://image.tmdb.org/t/p/original/fmBAmAyR6aMo1HAutV0oZ8Y7emb.jpg',
         release_date: '2015-02-13',
-        video_url: 'G4JuopziR3Q',
+        youtube_key: 'G4JuopziR3Q',
         created_at: '2020-01-01T01:0:00.000Z',
         updated_at: '2020-01-01T01:0:00.000Z'
       },
@@ -566,7 +566,7 @@ export default {
         poster_url:
           'https://image.tmdb.org/t/p/original/gJDaabuOo6Gah2u23E9qI4z8eIY.jpg',
         release_date: '2020-01-09',
-        video_url: 'G4JuopziR3Q',
+        youtube_key: 'G4JuopziR3Q',
         created_at: '2020-01-01T01:0:00.000Z',
         updated_at: '2020-01-01T01:0:00.000Z'
       },
@@ -585,7 +585,7 @@ export default {
         poster_url:
           'https://image.tmdb.org/t/p/original/odtryn9XCRIo33oLDaAaaTNgiuQ.jpg',
         release_date: '2020-04-02',
-        video_url: 'G4JuopziR3Q',
+        youtube_key: 'G4JuopziR3Q',
         created_at: '2020-01-01T01:0:00.000Z',
         updated_at: '2020-01-01T01:0:00.000Z'
       },
@@ -604,7 +604,7 @@ export default {
         poster_url:
           'https://image.tmdb.org/t/p/original/siTwS1bBCzFFzjBEyoZg51jsfmv.jpg',
         release_date: '2020-07-10',
-        video_url: 'G4JuopziR3Q',
+        youtube_key: 'G4JuopziR3Q',
         created_at: '2020-01-01T01:0:00.000Z',
         updated_at: '2020-01-01T01:0:00.000Z'
       },
@@ -623,7 +623,7 @@ export default {
         poster_url:
           'https://image.tmdb.org/t/p/original/A5rjiJcRwNuGQxYehOrsngku8e7.jpg',
         release_date: '2020-10-03',
-        video_url: 'G4JuopziR3Q',
+        youtube_key: 'G4JuopziR3Q',
         created_at: '2020-01-01T01:0:00.000Z',
         updated_at: '2020-01-01T01:0:00.000Z'
       },
@@ -642,7 +642,7 @@ export default {
         poster_url:
           'https://image.tmdb.org/t/p/original/jyFHtqYeVvc2A9nLhFGvM49xGPg.jpg',
         release_date: '2019-01-07',
-        video_url: 'G4JuopziR3Q',
+        youtube_key: 'G4JuopziR3Q',
         created_at: '2020-01-01T01:0:00.000Z',
         updated_at: '2020-01-01T01:0:00.000Z'
       },
@@ -661,7 +661,7 @@ export default {
         poster_url:
           'https://image.tmdb.org/t/p/original/1raUrQr8Y2tSYjTDbk8wfWGKTmX.jpg',
         release_date: '2018-08-30',
-        video_url: 'G4JuopziR3Q',
+        youtube_key: 'G4JuopziR3Q',
         created_at: '2020-01-01T01:0:00.000Z',
         updated_at: '2020-01-01T01:0:00.000Z'
       },
@@ -680,7 +680,7 @@ export default {
         poster_url:
           'https://image.tmdb.org/t/p/original/jTDpdYASFxX45GWkGPHmS74BNvz.jpg',
         release_date: '2020-12-18',
-        video_url: 'G4JuopziR3Q',
+        youtube_key: 'G4JuopziR3Q',
         created_at: '2020-01-01T01:0:00.000Z',
         updated_at: '2020-01-01T01:0:00.000Z'
       },
@@ -699,7 +699,7 @@ export default {
         poster_url:
           'https://image.tmdb.org/t/p/original/iSimgRwq58yUz1n8bfmWcWirQkd.jpg',
         release_date: '2020-09-25',
-        video_url: 'G4JuopziR3Q',
+        youtube_key: 'G4JuopziR3Q',
         created_at: '2020-01-01T01:0:00.000Z',
         updated_at: '2020-01-01T01:0:00.000Z'
       },
@@ -718,7 +718,7 @@ export default {
         poster_url:
           'https://image.tmdb.org/t/p/original/9Fsee2p5qiac3GGmQjRUOK8oCp0.jpg',
         release_date: '2020-10-09',
-        video_url: 'G4JuopziR3Q',
+        youtube_key: 'G4JuopziR3Q',
         created_at: '2020-01-01T01:0:00.000Z',
         updated_at: '2020-01-01T01:0:00.000Z'
       },
@@ -737,7 +737,7 @@ export default {
         poster_url:
           'https://image.tmdb.org/t/p/original/3UupR0nS9R6Di9letdz4ftX95GF.jpg',
         release_date: '2019-08-29',
-        video_url: 'G4JuopziR3Q',
+        youtube_key: 'G4JuopziR3Q',
         created_at: '2020-01-01T01:0:00.000Z',
         updated_at: '2020-01-01T01:0:00.000Z'
       },
@@ -756,7 +756,7 @@ export default {
         poster_url:
           'https://image.tmdb.org/t/p/original/76GUieAvgHwH07Yd7kR86iay3dx.jpg',
         release_date: '2007-04-22',
-        video_url: 'G4JuopziR3Q',
+        youtube_key: 'G4JuopziR3Q',
         created_at: '2020-01-01T01:0:00.000Z',
         updated_at: '2020-01-01T01:0:00.000Z'
       }
