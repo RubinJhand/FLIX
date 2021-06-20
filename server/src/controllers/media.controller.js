@@ -1,9 +1,27 @@
+import '../utils/env.js';
+import moment from 'moment';
+
+import { DB_REFRESH_PATH } from '../constants/apiVersion.js';
 import models from '../db/models';
 
-export const mediaIndex = (req, res) => {
-  models.Media.findAll()
+// i have jokes. funny.
+const numberOfDaysBetweenUpdateOfDatabase = 1;
+
+export const mediaIndex = async (req, res) => {
+  await models.Media.findAll()
     .then((data) => {
-      return res.json({ data });
+      const lastUpdate = data[0]?.created_at;
+      const today = moment();
+      const amountOfDays = today.diff(lastUpdate, 'days');
+      console.log(data.length);
+
+      if (amountOfDays > numberOfDaysBetweenUpdateOfDatabase) {
+        return res.redirect(`${DB_REFRESH_PATH}/delete`);
+      }
+
+      if (data.length) return res.json({ data });
+
+      return res.redirect(`${DB_REFRESH_PATH}/delete`);
     })
     .catch((error) => {
       return res.json({
@@ -12,10 +30,10 @@ export const mediaIndex = (req, res) => {
     });
 };
 
-export const mediaShow = (req, res) => {
+export const mediaShow = async (req, res) => {
   const { id } = req.params;
 
-  models.Media.findByPk(id)
+  await models.Media.findByPk(id)
     .then((data) => {
       return res.json({ data });
     })
@@ -26,8 +44,8 @@ export const mediaShow = (req, res) => {
     });
 };
 
-export const mediaShowTv = (req, res) => {
-  models.Media.findAll({ where: { tv: true } })
+export const mediaShowTv = async (req, res) => {
+  await models.Media.findAll({ where: { tv: true } })
     .then((data) => {
       return res.json({ data });
     })
@@ -38,8 +56,8 @@ export const mediaShowTv = (req, res) => {
     });
 };
 
-export const mediaShowMovie = (req, res) => {
-  models.Media.findAll({ where: { movie: true } })
+export const mediaShowMovie = async (req, res) => {
+  await models.Media.findAll({ where: { movie: true } })
     .then((data) => {
       return res.json({ data });
     })
