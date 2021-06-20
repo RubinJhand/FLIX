@@ -54,7 +54,7 @@ export const categoryShowAllMovies = async (req, res) => {
   try {
     const findCategoryTv = await mediaFindAll({
       where: {
-        tv: true,
+        movie: true,
         categories: {
           [Op.iLike]: `%${genre}%`
         }

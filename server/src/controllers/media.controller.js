@@ -37,7 +37,7 @@ export const mediaShowTv = async (req, res) => {
 };
 
 export const mediaShowMovie = async (req, res) => {
-  const mediaShowMovies = await mediaFindAll({ where: { tv: true } });
+  const mediaShowMovies = await mediaFindAll({ where: { movie: true } });
 
   const { redirect, data } = mediaShowMovies;
 
