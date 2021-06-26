@@ -3,12 +3,7 @@ import SvgIcon from '@material-ui/core/SvgIcon';
 
 const LogoIcon = () => {
   return (
-    <SvgIcon
-      viewBox='0 0 109.53 58.57'
-      color='primary'
-      fontSize='large'
-      style={{ fontSize: '4em' }}
-    >
+    <SvgIcon viewBox='0 0 109.53 58.57' color='primary' fontSize='large'>
       <g transform='translate(-50.65 -120.34)'>
         <g stroke-width='.60919'>
           <path
