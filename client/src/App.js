@@ -1,10 +1,15 @@
 import React from 'react';
 
+import HeaderContainer from './containers/HeaderContainer';
+
 const App = () => {
   return (
     <div>
       {/* Header */}
-      <h1>movie app</h1>
+      <HeaderContainer />
+      {/* Navbar */}
+      {/* Hero/Carousel */}
+      {/* Main */}
     </div>
   );
 };
