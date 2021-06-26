@@ -2,6 +2,7 @@ import React, { useState, useEffect } from 'react';
 import useMobileMenu from '../hooks/useMobileMenu';
 
 import Header from '../components/header/Header';
+import SearchContainer from './SearchContainer';
 
 import { mainMenuItems } from '../components/header/menuItems';
 
@@ -44,7 +45,9 @@ const HeaderContainer = () => {
         />
       </Header.Middle>
 
-      <Header.Right></Header.Right>
+      <Header.Right>
+        <SearchContainer isMobileMenu={isMobileMenu} />
+      </Header.Right>
     </Header>
   );
 };
