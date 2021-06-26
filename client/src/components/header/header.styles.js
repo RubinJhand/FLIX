@@ -34,6 +34,19 @@ export const Logo = styled(LogoIcon).attrs((props) => ({}))``;
 export const Left = styled.div`
   display: flex;
   align-items: center;
+
+  > svg {
+    cursor: pointer;
+    font-size: 4.375rem;
+    background: transparent;
+
+    transition: color 400ms linear;
+    color: var(--white);
+
+    &:hover {
+      color: var(--primary);
+    }
+  }
 `;
 
 export const Middle = styled.div`
