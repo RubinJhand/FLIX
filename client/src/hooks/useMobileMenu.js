@@ -1,19 +1,19 @@
-import { useState, useEffect } from 'react';
+import { useState, useEffect, useCallback } from 'react';
 
 const useMobileMenu = (mediaWidth) => {
   const [isMobileMenu, setIsMobileMenu] = useState(
     window.matchMedia(mediaWidth).matches
   );
 
-  const handleResize = () => {
+  const handleResize = useCallback(() => {
     setIsMobileMenu(window.matchMedia(mediaWidth).matches);
-  };
+  }, [mediaWidth]);
 
   useEffect(() => {
     window.addEventListener('resize', handleResize);
 
     return () => window.removeEventListener('resize', handleResize);
-  }, [mediaWidth]);
+  }, [mediaWidth, handleResize]);
 
   return [isMobileMenu];
 };
