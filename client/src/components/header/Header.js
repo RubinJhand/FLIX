@@ -4,6 +4,8 @@ import {
   Container,
   Inner,
   Logo,
+  LogoText,
+  LogoWrapper,
   Left,
   Middle,
   Right,
@@ -24,6 +26,14 @@ Header.Logo = ({ ...restProps }) => {
   return <Logo {...restProps} />;
 };
 
+Header.LogoText = ({ children, ...restProps }) => {
+  return <LogoText {...restProps}>{children}</LogoText>;
+};
+
+Header.LogoWrapper = ({ children, ...restProps }) => {
+  return <LogoWrapper {...restProps}>{children}</LogoWrapper>;
+};
+
 Header.Left = ({ children, ...restProps }) => {
   return <Left {...restProps}>{children}</Left>;
 };
@@ -36,17 +46,8 @@ Header.Right = ({ children, ...restProps }) => {
   return <Right {...restProps}>{children}</Right>;
 };
 
-Header.Menu = ({ list, children, ...restProps }) => {
-  return (
-    <Menu {...restProps}>
-      {list.map((item, index) => (
-        <ListItem key={index + item.title} {...restProps}>
-          {item.title}
-        </ListItem>
-      ))}
-      {children}
-    </Menu>
-  );
+Header.Menu = ({ children, ...restProps }) => {
+  return <Menu {...restProps}>{children}</Menu>;
 };
 
 Header.ListItem = ({ children, ...restProps }) => {
