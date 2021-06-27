@@ -2,12 +2,6 @@ import styled, { css } from 'styled-components';
 import LogoIcon from '../../assets/LogoIcon';
 
 export const Container = styled.header`
-  background-color: var(--background-secondary);
-  background-image: linear-gradient(
-    180deg,
-    var(--background-secondary) 0,
-    rgba(26, 29, 41, 0.75)
-  );
   height: 4.375rem;
   display: flex;
   align-items: center;
@@ -17,6 +11,12 @@ export const Container = styled.header`
   left: 0;
   right: 0;
   z-index: 100;
+  background-color: var(--background-secondary);
+  background-image: linear-gradient(
+    180deg,
+    var(--background-secondary) 0,
+    rgba(26, 29, 41, 0.75)
+  );
 `;
 
 export const Inner = styled.nav`
@@ -31,22 +31,43 @@ export const Inner = styled.nav`
 
 export const Logo = styled(LogoIcon).attrs((props) => ({}))``;
 
-export const Left = styled.div`
+export const LogoText = styled.h1`
+  font-size: 1.75em;
+  letter-spacing: 0.1875em;
+
+  text-transform: uppercase;
+  font-weight: 300;
+`;
+
+export const LogoWrapper = styled.span`
   display: flex;
   align-items: center;
+  justify-content: center;
+  color: var(--white);
+  padding: 0.5em;
+  cursor: pointer;
+
+  border-radius: 0.625em;
+  -webkit-box-shadow: 0px 0px 0px 1px rgba(249, 249, 249, 0.1);
+  box-shadow: 0px 0px 0px 1px rgba(249, 249, 249, 0.1);
+  transition: box-shadow 400ms ease-in-out;
 
   > svg {
     cursor: pointer;
-    font-size: 4.375rem;
-    background: transparent;
-
-    transition: color 400ms linear;
-    color: var(--white);
-
-    &:hover {
-      color: var(--primary);
-    }
+    font-size: 1.75rem;
+    margin: 0 0.05em 0 -0.25em;
   }
+
+  &:hover,
+  &:focus {
+    -webkit-box-shadow: 0px 0px 0px 1px #02d3de;
+    box-shadow: 0px 0px 0px 1px #02d3de;
+  }
+`;
+
+export const Left = styled.div`
+  display: flex;
+  align-items: center;
 `;
 
 export const Middle = styled.div`
@@ -69,17 +90,25 @@ export const Menu = styled.ul`
   color: var(--white);
   list-style: none;
   padding: 0;
+  align-items: center;
+  justify-content: space-evenly;
+  width: 100%;
 
   ${({ isMobileMenu }) =>
     isMobileMenu &&
     css`
       position: absolute;
       flex-direction: column;
-      top: 4.375rem;
+      top: 4rem;
       left: 0;
       right: 0;
-      z-index: 10;
-      background-color: var(--background-secondary);
+      z-index: 101;
+      border-radius: 0.625em;
+
+      box-shadow: rgba(0, 0, 0, 0.8) 0px 40px 58px -16px,
+        rgba(0, 0, 0, 0.72) 0px 30px 22px -10px;
+
+      background: var(--background-secondary);
     `};
 `;
 
@@ -88,17 +117,30 @@ export const ListItem = styled.li`
   align-items: center;
   justify-content: center;
   cursor: pointer;
-  font-size: 0.9em;
+  font-size: 1em;
   letter-spacing: 0.1875em;
-  padding: ${({ isMobileMenu }) => (isMobileMenu ? '1.5em' : '0.25em 1em')};
-  filter: brightness(50%);
+  padding: ${({ isMobileMenu }) => (isMobileMenu ? '0' : '0.25em 1em')};
+  position: relative;
+  margin: 1.5em;
 
-  transition: filter 400ms linear;
+  &::before {
+    content: '';
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    height: 2px;
 
-  &:hover {
-    filter: brightness(100%);
-    border-bottom: ${({ isMobileMenu }) =>
-      isMobileMenu ? 'none' : '2px solid var(--primary)'};
+    background-color: var(--primary);
+    transform: scaleX(0);
+    transition: transform 400ms ease-in-out;
+  }
+
+  &:hover,
+  &:focus {
+    &::before {
+      transform: scaleX(1);
+    }
   }
 `;
 
@@ -108,11 +150,11 @@ export const Text = styled.span`
   display: flex;
   align-items: center;
   cursor: pointer;
-
-  transition: filter 400ms linear;
   filter: brightness(50%);
+  transition: filter 400ms linear;
 
   > svg {
+    padding-top: 0.18em;
     transition: transform 400ms ease-in-out;
     transform: ${({ isMenuOpen }) =>
       isMenuOpen ? 'rotate(-180deg)' : 'rotate(0)'};
