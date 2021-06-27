@@ -7,22 +7,21 @@ export const Container = styled.div`
   right: 0;
   max-width: 100%;
 
-  transition: color 400ms linear, transform 400ms ease-in-out 500ms,
-    box-shadow 400ms ease-in-out;
+  transition: color 400ms linear, transform 400ms ease-in-out 500ms;
 
   ${({ isSearchOpen }) =>
     isSearchOpen &&
     css`
-      border: 2px solid var(--primary);
+      border: 2px solid var(--white);
       background-color: var(--background-secondary);
       border-radius: 3px;
       right: 0;
       margin: 0 1rem;
       transform: scale(1.05);
 
-      box-shadow: rgba(0, 0, 0, 0.8) 0px 40px 58px -16px,
-        rgba(0, 0, 0, 0.72) 0px 30px 22px -10px,
-        rgba(0, 0, 0, 0.25) 0px -10px 20px -10px;
+      &:focus-within {
+        border: 2px solid var(--primary);
+      }
     `};
 `;
 
@@ -57,9 +56,9 @@ export const SearchInput = styled.input`
   border: none;
 
   &:focus {
-    border: 1px solid var(--secondary);
+    border: 1px solid var(--white);
     border-radius: 2px;
-    outline: var(--primary);
+    outline: var(--white);
   }
 `;
 

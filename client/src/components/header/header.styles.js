@@ -91,20 +91,14 @@ export const ListItem = styled.li`
   font-size: 0.9em;
   letter-spacing: 0.1875em;
   padding: ${({ isMobileMenu }) => (isMobileMenu ? '1.5em' : '0.25em 1em')};
+  filter: brightness(50%);
 
-  transition: color 800ms linear, transform 400ms ease-in-out,
-    box-shadow 400ms ease-in-out;
+  transition: filter 400ms linear;
 
   &:hover {
-    color: var(--primary);
-    background-color: var(--background-secondary);
-    border: 1px solid var(--primary);
-    border-radius: 3px;
-    transform: scale(1.05);
-
-    box-shadow: rgba(0, 0, 0, 0.8) 0px 40px 58px -16px,
-      rgba(0, 0, 0, 0.72) 0px 30px 22px -10px,
-      rgba(0, 0, 0, 0.25) 0px -10px 20px -10px;
+    filter: brightness(100%);
+    border-bottom: ${({ isMobileMenu }) =>
+      isMobileMenu ? 'none' : '2px solid var(--primary)'};
   }
 `;
 
