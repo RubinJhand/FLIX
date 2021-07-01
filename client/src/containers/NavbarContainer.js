@@ -17,7 +17,7 @@ import {
 
 const NavbarContainer = ({ isMobileMenu }) => {
   const { mediaType } = useMediaType();
-  const [data, setUrl] = useApiData();
+  const [, setUrl] = useApiData();
 
   const genreType = mediaType === 'tv' ? genreTvMenuItems : genreMovieMenuItems;
   const collectionType =
@@ -27,37 +27,45 @@ const NavbarContainer = ({ isMobileMenu }) => {
     setUrl(`${mediaType}/${genre}`);
   };
 
-  console.log('navbar rendered', data);
-
   return (
     <>
       <Navbar isGenre>
         <Navbar.Wrapper isGenre>
           {genreType?.map((item, index) => (
-            <Navbar.Text
+            <Navbar.Link
               key={item.genre + index}
-              isGenre
-              onClick={() => handleChangeGenre(item.genre)}
+              to={`/${mediaType}/${item.genre}`}
+              activeClassName='active'
             >
-              {item.genre}
-            </Navbar.Text>
+              <Navbar.Text
+                isGenre
+                onClick={() => handleChangeGenre(item.genre)}
+              >
+                {item.genre}
+              </Navbar.Text>
+            </Navbar.Link>
           ))}
         </Navbar.Wrapper>
       </Navbar>
       <Navbar isCollection>
         <Navbar.Wrapper>
           {collectionType?.map((item, index) => (
-            <Navbar.IconWrap
-              key={item.title + index}
-              color={item.color}
-              isProvider={item.provider}
-              onClick={() => handleChangeGenre(item.title)}
+            <Navbar.Link
+              key={item.title}
+              to={`/${mediaType}/${item.title}`}
+              activeClassName='active'
             >
-              <Navbar.Text isCollection isMobileMenu={isMobileMenu}>
-                {item.title}
-              </Navbar.Text>
-              {item.icon}
-            </Navbar.IconWrap>
+              <Navbar.IconWrap
+                color={item.color}
+                isProvider={item.provider}
+                onClick={() => handleChangeGenre(item.title)}
+              >
+                <Navbar.Text isCollection isMobileMenu={isMobileMenu}>
+                  {item.title}
+                </Navbar.Text>
+                {item.icon}
+              </Navbar.IconWrap>
+            </Navbar.Link>
           ))}
         </Navbar.Wrapper>
       </Navbar>
