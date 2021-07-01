@@ -27,7 +27,7 @@ export const providerMenuItems = [
     provider: true
   },
   {
-    title: 'Prime Video',
+    title: 'Prime',
     icon: <PrimeIcon />,
     provider: true
   }
