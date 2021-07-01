@@ -38,10 +38,10 @@ export const SearchInput = styled.input`
   ${({ isSearchOpen }) =>
     isSearchOpen &&
     css`
-      border: 2px solid var(--white);
-      border-radius: 10px;
+      border: 0.125em solid var(--white);
+      border-radius: 0.625em;
       width: ${({ isMobileMenu }) =>
-        isMobileMenu ? 'calc(100vw - 1.75rem)' : '25vw'};
+        isMobileMenu ? 'calc(100vw - 7em)' : '25vw'};
       padding: 1.15em 2.5em 1.15em 0.75em;
       background-color: rgba(43, 56, 70, 1);
       right: -0.15em;

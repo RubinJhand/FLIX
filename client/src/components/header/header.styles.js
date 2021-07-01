@@ -11,7 +11,7 @@ export const Container = styled.header`
   left: 0;
   right: 0;
   z-index: 100;
-  background-color: var(--background-secondary);
+  background-color: var(--background-primary);
   background-image: linear-gradient(
     180deg,
     var(--background-secondary) 0,
@@ -23,7 +23,7 @@ export const Inner = styled.nav`
   display: flex;
   align-items: center;
   justify-content: space-between;
-  margin: 1rem;
+  margin: 3.5rem;
   width: 100%;
   position: relative;
   z-index: 99;
@@ -32,7 +32,7 @@ export const Inner = styled.nav`
 export const Logo = styled(LogoIcon).attrs((props) => ({}))``;
 
 export const LogoText = styled.h1`
-  font-size: 1.75em;
+  font-size: 1.953em;
   letter-spacing: 0.1875em;
 
   text-transform: uppercase;
@@ -54,7 +54,7 @@ export const LogoWrapper = styled.span`
 
   > svg {
     cursor: pointer;
-    font-size: 1.75rem;
+    font-size: 1.953rem;
     margin: 0 0.05em 0 -0.25em;
   }
 
@@ -99,14 +99,10 @@ export const Menu = styled.ul`
     css`
       position: absolute;
       flex-direction: column;
-      top: 4rem;
+      top: 3.75rem;
       left: 0;
       right: 0;
       z-index: 101;
-      border-radius: 0.625em;
-
-      box-shadow: rgba(0, 0, 0, 0.8) 0px 40px 58px -16px,
-        rgba(0, 0, 0, 0.72) 0px 30px 22px -10px;
 
       background: var(--background-secondary);
     `};
@@ -116,12 +112,14 @@ export const ListItem = styled.li`
   display: flex;
   align-items: center;
   justify-content: center;
-  cursor: pointer;
-  font-size: 1em;
-  letter-spacing: 0.1875em;
-  padding: ${({ isMobileMenu }) => (isMobileMenu ? '0' : '0.25em 1em')};
   position: relative;
+  cursor: pointer;
+
+  padding: ${({ isMobileMenu }) => (isMobileMenu ? '0' : '0.25em 1em')};
   margin: 1.5em;
+
+  font-size: 1.25em;
+  letter-spacing: 0.1875em;
 
   &::before {
     content: '';
