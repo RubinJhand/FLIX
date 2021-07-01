@@ -1,4 +1,4 @@
-import React, { createContext, useContext, useState, useMemo } from 'react';
+import React, { createContext, useState, useMemo } from 'react';
 
 export const MediaTypeContext = createContext();
 
