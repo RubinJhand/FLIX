@@ -51,7 +51,7 @@ const useAxiosFetch = (initialUrl, initialData) => {
         const result = await axios.get(url);
 
         if (!isCancel) {
-          dispatch({ type: ACTIONS.SUCCESS, payload: result.data });
+          dispatch({ type: ACTIONS.SUCCESS, payload: result.data.data });
         }
       } catch (error) {
         if (!isCancel) {

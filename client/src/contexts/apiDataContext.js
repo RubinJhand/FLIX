@@ -7,9 +7,8 @@ export const useApiData = () => useContext(ApiDataContext);
 
 export const ApiDataProvider = ({ children }) => {
   const [results, setUrl] = useAxiosFetch('popular');
-  const { data } = results;
 
-  const apiDataValue = useMemo(() => [data, setUrl], [data, setUrl]);
+  const apiDataValue = useMemo(() => [results, setUrl], [results, setUrl]);
 
   return (
     <ApiDataContext.Provider value={apiDataValue}>
