@@ -1,9 +1,10 @@
 import { Op } from 'sequelize';
 
 import { mediaFindAll } from '../services';
+import { DB_REFRESH_PATH } from '../constants';
 
 export const categoryShowAll = async (req, res) => {
-  const { genre } = req.params;
+  const { mediaType, genre } = req.params;
 
   try {
     const findCategory = await mediaFindAll({
@@ -13,16 +14,26 @@ export const categoryShowAll = async (req, res) => {
         }
       }
     });
-    const { data } = findCategory;
+    const { redirect, data } = findCategory;
 
-    return res.json({ data });
+    // if (redirect) return res.redirect(`${DB_REFRESH_PATH}/delete`);
+    // if (!redirect) return res.json({ data });
+
+    if (redirect) {
+      if (mediaType)
+        return res.redirect(`${DB_REFRESH_PATH}/delete/${mediaType}/${genre}`);
+
+      if (!mediaType) return res.redirect(`${DB_REFRESH_PATH}/delete/${genre}`);
+    }
+
+    if (!redirect) return res.json({ data });
   } catch (error) {
     console.log('Show Find Category Error:', error);
   }
 };
 
 export const categoryShowAllTv = async (req, res) => {
-  const { genre } = req.params;
+  const { mediaType, genre } = req.params;
 
   try {
     const findCategoryTv = await mediaFindAll({
@@ -33,9 +44,16 @@ export const categoryShowAllTv = async (req, res) => {
         }
       }
     });
-    const { data } = findCategoryTv;
+    const { redirect, data } = findCategoryTv;
 
-    return res.json({ data });
+    if (redirect) {
+      if (mediaType)
+        return res.redirect(`${DB_REFRESH_PATH}/delete/${mediaType}/${genre}`);
+
+      if (!mediaType) return res.redirect(`${DB_REFRESH_PATH}/delete/${genre}`);
+    }
+
+    if (!redirect) return res.json({ data });
   } catch (error) {
     console.log('Show Find Category Tv Error:', error);
   }
@@ -45,7 +63,7 @@ export const categoryShowAllMovies = async (req, res) => {
   const { genre } = req.params;
 
   try {
-    const findCategoryTv = await mediaFindAll({
+    const findCategoryMovies = await mediaFindAll({
       where: {
         movie: true,
         genre: {
@@ -53,9 +71,19 @@ export const categoryShowAllMovies = async (req, res) => {
         }
       }
     });
-    const { data } = findCategoryTv;
+    const { redirect, data } = findCategoryMovies;
 
-    return res.json({ data });
+    // if (redirect) return res.redirect(`${DB_REFRESH_PATH}/delete`);
+    // if (!redirect) return res.json({ data });
+
+    if (redirect) {
+      if (mediaType)
+        return res.redirect(`${DB_REFRESH_PATH}/delete/${mediaType}/${genre}`);
+
+      if (!mediaType) return res.redirect(`${DB_REFRESH_PATH}/delete/${genre}`);
+    }
+
+    if (!redirect) return res.json({ data });
   } catch (error) {
     console.log('Show Find Category Tv Error:', error);
   }

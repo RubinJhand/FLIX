@@ -6,9 +6,10 @@ export const mediaFindAll = async (options) => {
     const mediaData = await models.Media.findAll(options);
     const lastUpdate = mediaData[0]?.created_at;
 
-    console.log(mediaData.length); // I like to know how many records there are
+    console.log('Number of records found:', mediaData.length); // I like to know how many records there are
 
-    if (isUpdateDb(lastUpdate)) return { redirect: true, data: mediaData };
+    if (!mediaData.length || isUpdateDb(lastUpdate))
+      return { redirect: true, data: mediaData };
     if (mediaData.length) return { redirect: false, data: mediaData };
   } catch (error) {
     console.log('Media find all where:', `${options} Error: ${error.message}`);

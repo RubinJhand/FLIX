@@ -52,13 +52,34 @@ export const mediaShowMovie = async (req, res) => {
 };
 
 export const mediaCreateBulk = async (req, res) => {
-  await mediaBulkCreate().then(() => {
-    return res.redirect(`${API_CURRENT_VERSION}/media`);
-  });
+  const { mediaType, genre } = req.params;
+
+  await mediaBulkCreate()
+    .then(() => {
+      if (mediaType)
+        return res.redirect(
+          `${API_CURRENT_VERSION}/category/${mediaType}/${genre}`
+        );
+
+      if (!mediaType)
+        return res.redirect(`${API_CURRENT_VERSION}/category/${genre}`);
+    })
+    .catch((error) => {
+      console.log('Error in mediaCreateBulk:', error);
+    });
 };
 
 export const mediaDeleteAll = async (req, res) => {
-  await mediaDestroy().then(() => {
-    return res.redirect(`${DB_REFRESH_PATH}/create`);
-  });
+  const { mediaType, genre } = req.params;
+
+  await mediaDestroy()
+    .then(() => {
+      if (mediaType)
+        return res.redirect(`${DB_REFRESH_PATH}/create/${mediaType}/${genre}`);
+
+      if (!mediaType) return res.redirect(`${DB_REFRESH_PATH}/create/${genre}`);
+    })
+    .catch((error) => {
+      console.log('Error in mediaDeleteAll:', error);
+    });
 };

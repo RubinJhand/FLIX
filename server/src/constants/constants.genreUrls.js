@@ -29,7 +29,7 @@ export const genreUrls = [
     url: `/list/9095?api_key=${API_KEY}&language=en-US`
   },
   {
-    genre: 'Amazon Prime',
+    genre: 'Prime Video',
     list: false,
     url: `/discover/tv?api_key=${API_KEY}&language=en-US&sort_by=popularity.desc&page=1&timezone=America%2FNew_York&with_original_language=en&with_networks=${PRIME}`
   },
