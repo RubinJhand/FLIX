@@ -1,4 +1,5 @@
 import styled, { css } from 'styled-components';
+import { NavLink as RouterLink } from 'react-router-dom';
 
 export const Container = styled.div`
   position: fixed;
@@ -8,17 +9,27 @@ export const Container = styled.div`
   z-index: 80;
   background-color: var(--background-primary);
 
+  height: 2em;
+
   ${({ isGenre }) =>
     isGenre &&
     css`
-      margin-top: 1.5em;
+      margin-top: 1.969em;
+      height: 2em;
       background-color: var(--background-secondary);
     `};
+
+  -webkit-box-shadow: inset 15px 15px 25px -9px rgba(0, 0, 0, 0.61),
+    inset -18px -18px 28px -23px rgba(255, 255, 255, 0.26);
+  box-shadow: inset 15px 15px 25px -9px rgba(0, 0, 0, 0.61),
+    inset -18px -18px 28px -23px rgba(255, 255, 255, 0.26);
 `;
 
 export const Wrapper = styled.div`
   display: flex;
   align-items: center;
+  padding: 0.4em 1em;
+  margin: 0 1.5em;
 
   -ms-overflow-style: none;
   scrollbar-width: none;
@@ -30,26 +41,31 @@ export const Wrapper = styled.div`
   ${({ isGenre }) =>
     isGenre &&
     css`
-      padding: 0 1.5em;
       overflow-x: scroll;
     `};
+`;
+
+export const Link = styled(RouterLink)`
+  text-decoration: none;
+  width: 100%;
 `;
 
 export const IconWrap = styled.span`
   color: var(--white);
   cursor: pointer;
-  filter: brightness(50%);
+
   width: 100%;
 
   display: flex;
   align-items: center;
   justify-content: space-evenly;
 
-  transition: transform 400ms ease-in-out, filter 400ms linear 400ms;
+  transition: transform 400ms ease-in-out;
 
   > svg {
-    font-size: 4.5rem;
+    font-size: 6.5rem;
     position: absolute;
+
     z-index: 95;
 
     transform: scale(0);

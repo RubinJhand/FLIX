@@ -1,6 +1,6 @@
 import React from 'react';
 
-import { Container, Wrapper, IconWrap, Text } from './navbar.styles';
+import { Container, Wrapper, IconWrap, Text, Link } from './navbar.styles';
 
 const Navbar = ({ children, ...restProps }) => {
   return <Container {...restProps}>{children}</Container>;
@@ -8,6 +8,14 @@ const Navbar = ({ children, ...restProps }) => {
 
 Navbar.Wrapper = ({ children, ...restProps }) => {
   return <Wrapper {...restProps}>{children}</Wrapper>;
+};
+
+Navbar.Link = ({ children, ...restProps }) => {
+  return (
+    <Link exact {...restProps}>
+      {children}
+    </Link>
+  );
 };
 
 Navbar.IconWrap = ({ color, children, ...restProps }) => {
