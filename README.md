@@ -2,13 +2,13 @@
 
 # FLIX
 
-    FLIX is a responsive web app for viewing categories and genres of various films and series.  Users can search and see recommendations based on the selected film or series.  Cards are styled to resemble widescreen televisions and/or cinema screens.  The server queries the API and stores the data, after formatting, in the database.  The frontend only communicates with the server.
+FLIX is a responsive web app for viewing categories and genres of various films and series. Users can search and see recommendations based on the selected film or series. Cards are styled to resemble widescreen televisions and/or cinema screens. The server queries the API and stores the data, after formatting, in the database. The frontend only communicates with the server.
 
 ## Motivation
 
 ---
 
-    While this type of app is very common, and I expect some exaggerated eye-rolling, I chose to create this app to learn: Figma, Inkscape, and become more familiar with Babel for Sequelize and Express (ES6). I created the popcorn logo svg and I also improved my skills with: Styled Components, React, CSS, Sequelize, Postgres, Express, and coded with readability in mind.
+While this type of app is very common, and I expect some exaggerated eye-rolling, I chose to create this app to learn: Figma, Inkscape, and become more familiar with Babel for Sequelize and Express (ES6). I created the popcorn logo svg and I also improved my skills with: Styled Components, React, CSS, Sequelize, Postgres, Express, and coded with readability in mind.
 
 ## Screenshots
 
@@ -18,11 +18,15 @@
 
 ![Flix Mobile View](https://github.com/RubinJhand/movie-app/blob/master/docs/images/FlixMobile.png)
 
+### Desktop View
+
+![Flix Desktop View](https://github.com/RubinJhand/movie-app/blob/master/docs/images/FlixPage.png)
+
 ### User Experience
 
-![Flix Card Hover with Trailer](https://github.com/RubinJhand/movie-app/blob/master/docs/images/FlixCardDemo.gif)
-
 ![Flix Header and Nav demo](https://github.com/RubinJhand/movie-app/blob/master/docs/images/FlixNav.gif)
+
+![Flix Card Hover with Trailer](https://github.com/RubinJhand/movie-app/blob/master/docs/images/FlixCardDemo.gif)
 
 ### Console
 
