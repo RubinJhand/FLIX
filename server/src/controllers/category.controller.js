@@ -4,7 +4,7 @@ import { mediaFindAll } from '../services';
 import { DB_REFRESH_PATH } from '../constants';
 
 export const categoryShowAll = async (req, res) => {
-  const { mediaType, genre } = req.params;
+  const { genre } = req.params;
 
   try {
     const findCategory = await mediaFindAll({
@@ -16,13 +16,7 @@ export const categoryShowAll = async (req, res) => {
     });
     const { redirect, data } = findCategory;
 
-    if (redirect) {
-      if (mediaType)
-        return res.redirect(`${DB_REFRESH_PATH}/delete/${mediaType}/${genre}`);
-
-      if (!mediaType) return res.redirect(`${DB_REFRESH_PATH}/delete/${genre}`);
-    }
-
+    if (redirect) return res.redirect(`${DB_REFRESH_PATH}/delete/${genre}`);
     if (!redirect) return res.json({ data });
   } catch (error) {
     console.log('Show Find Category Error:', error);
@@ -30,7 +24,7 @@ export const categoryShowAll = async (req, res) => {
 };
 
 export const categoryShowAllTv = async (req, res) => {
-  const { mediaType, genre } = req.params;
+  const { genre } = req.params;
 
   try {
     const findCategoryTv = await mediaFindAll({
@@ -41,16 +35,9 @@ export const categoryShowAllTv = async (req, res) => {
         }
       }
     });
-    const { redirect, data } = findCategoryTv;
+    const { data } = findCategoryTv;
 
-    if (redirect) {
-      if (mediaType)
-        return res.redirect(`${DB_REFRESH_PATH}/delete/${mediaType}/${genre}`);
-
-      if (!mediaType) return res.redirect(`${DB_REFRESH_PATH}/delete/${genre}`);
-    }
-
-    if (!redirect) return res.json({ data });
+    return res.json({ data });
   } catch (error) {
     console.log('Show Find Category Tv Error:', error);
   }
@@ -68,16 +55,9 @@ export const categoryShowAllMovies = async (req, res) => {
         }
       }
     });
-    const { redirect, data } = findCategoryMovies;
+    const { data } = findCategoryMovies;
 
-    if (redirect) {
-      if (mediaType)
-        return res.redirect(`${DB_REFRESH_PATH}/delete/${mediaType}/${genre}`);
-
-      if (!mediaType) return res.redirect(`${DB_REFRESH_PATH}/delete/${genre}`);
-    }
-
-    if (!redirect) return res.json({ data });
+    return res.json({ data });
   } catch (error) {
     console.log('Show Find Category Tv Error:', error);
   }

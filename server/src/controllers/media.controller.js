@@ -30,7 +30,6 @@ export const mediaShowTv = async (req, res) => {
       ['last_aired', 'ASC']
     ]
   });
-
   const { redirect, data } = mediaShowTv;
 
   if (redirect) return res.redirect(`${DB_REFRESH_PATH}/delete`);
@@ -39,7 +38,6 @@ export const mediaShowTv = async (req, res) => {
 
 export const mediaShowMovie = async (req, res) => {
   const mediaShowMovies = await mediaFindAll({ where: { movie: true } });
-
   const { redirect, data } = mediaShowMovies;
 
   if (redirect) return res.redirect(`${DB_REFRESH_PATH}/delete`);
@@ -47,17 +45,11 @@ export const mediaShowMovie = async (req, res) => {
 };
 
 export const mediaCreateBulk = async (req, res) => {
-  const { mediaType, genre } = req.params;
+  const { genre } = req.params;
 
   await mediaBulkCreate()
     .then(() => {
-      if (mediaType)
-        return res.redirect(
-          `${API_CURRENT_VERSION}/category/${mediaType}/${genre}`
-        );
-
-      if (!mediaType)
-        return res.redirect(`${API_CURRENT_VERSION}/category/${genre}`);
+      return res.redirect(`${API_CURRENT_VERSION}/category/${genre}`);
     })
     .catch((error) => {
       console.log('Error in mediaCreateBulk:', error);
@@ -65,14 +57,11 @@ export const mediaCreateBulk = async (req, res) => {
 };
 
 export const mediaDeleteAll = async (req, res) => {
-  const { mediaType, genre } = req.params;
+  const { genre } = req.params;
 
   await mediaDestroy()
     .then(() => {
-      if (mediaType)
-        return res.redirect(`${DB_REFRESH_PATH}/create/${mediaType}/${genre}`);
-
-      if (!mediaType) return res.redirect(`${DB_REFRESH_PATH}/create/${genre}`);
+      return res.redirect(`${DB_REFRESH_PATH}/create/${genre}`);
     })
     .catch((error) => {
       console.log('Error in mediaDeleteAll:', error);

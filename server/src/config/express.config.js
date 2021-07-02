@@ -19,9 +19,11 @@ app.use(urlencoded({ extended: true }));
 
 // ----- Routes -----
 app.use(API_CURRENT_VERSION, MediaRoutes);
-app.use(`${DB_REFRESH_PATH}`, RefreshRoutes);
 app.use(API_CURRENT_VERSION, CategoryRoutes);
 app.use(API_CURRENT_VERSION, SearchRoutes);
+
+// Below routes are for development purposes only.
+app.use(`${DB_REFRESH_PATH}`, RefreshRoutes);
 
 app.get('/', (req, res) => {
   res.json({ data: 'working!' });

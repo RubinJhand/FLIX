@@ -8,8 +8,10 @@ export const mediaFindAll = async (options) => {
 
     console.log('Number of records found:', mediaData.length); // I like to know how many records there are
 
-    if (!mediaData.length || isUpdateDb(lastUpdate))
-      return { redirect: true, data: mediaData };
+    // THIS IS ONLY FOR DEVELOPMENT PURPOSES
+    // Triggering a delete all on the database from front-end is an extremely bad (stupid) idea.  Would not be doing this in any other situation.
+    if (isUpdateDb(lastUpdate)) return { redirect: true, data: mediaData };
+    if (!mediaData.length) return { redirect: false, data: mediaData };
     if (mediaData.length) return { redirect: false, data: mediaData };
   } catch (error) {
     console.log('Media find all where:', `${options} Error: ${error.message}`);
