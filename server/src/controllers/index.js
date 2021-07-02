@@ -14,3 +14,5 @@ export {
 } from './category.controller';
 
 export { searchController } from './search.controller';
+export { seasonController } from './season.controller';
+export { recommendationController } from './recommendation.controller';
