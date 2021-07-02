@@ -1,9 +1,13 @@
 import React from 'react';
 import { Route, Switch } from 'react-router-dom';
 
+// Contexts
 import { ApiDataProvider } from './contexts/apiDataContext';
 import { MediaTypeProvider } from './contexts/mediaTypeContext';
+
+// Containers
 import HeaderContainer from './containers/HeaderContainer';
+import MainContainer from './containers/MainContainer';
 
 const App = () => {
   return (
@@ -11,20 +15,18 @@ const App = () => {
       <ApiDataProvider>
         <MediaTypeProvider>
           <HeaderContainer />
+          <Switch>
+            <Route exact path='/'>
+              <MainContainer />
+            </Route>
+            <Route exact path='/tv/:genre'>
+              <MainContainer />
+            </Route>
+            <Route exact path='/movies/:genre'>
+              <MainContainer />
+            </Route>
+          </Switch>
         </MediaTypeProvider>
-        <Switch>
-          <Route exact path='/'>
-            {/* Main */}
-          </Route>
-          <Route exact path='/tv/:genre'>
-            {/* Carousel */}
-            {/* Main */}
-          </Route>
-          <Route exact path='/movie/:genre'>
-            {/* Carousel */}
-            {/* Main */}
-          </Route>
-        </Switch>
       </ApiDataProvider>
     </>
   );
