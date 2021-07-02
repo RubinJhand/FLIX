@@ -1,6 +1,6 @@
 import { searchService } from '../services';
 
-export const search = async (req, res) => {
+export const searchController = async (req, res) => {
   try {
     const { search } = req.params;
     const data = await searchService(search);

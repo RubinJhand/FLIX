@@ -12,3 +12,5 @@ export {
   categoryShowAllMovies,
   categoryShowAllTv
 } from './category.controller';
+
+export { searchController } from './search.controller';

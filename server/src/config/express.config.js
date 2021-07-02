@@ -3,7 +3,12 @@ import cors from 'cors';
 
 import CORS_CONFIG from './cors.config';
 import { API_CURRENT_VERSION, DB_REFRESH_PATH } from '../constants';
-import { MediaRoutes, CategoryRoutes, RefreshRoutes } from '../routes';
+import {
+  MediaRoutes,
+  CategoryRoutes,
+  RefreshRoutes,
+  SearchRoutes
+} from '../routes';
 
 const app = express();
 
@@ -16,6 +21,7 @@ app.use(urlencoded({ extended: true }));
 app.use(API_CURRENT_VERSION, MediaRoutes);
 app.use(`${DB_REFRESH_PATH}`, RefreshRoutes);
 app.use(API_CURRENT_VERSION, CategoryRoutes);
+app.use(API_CURRENT_VERSION, SearchRoutes);
 
 app.get('/', (req, res) => {
   res.json({ data: 'working!' });
