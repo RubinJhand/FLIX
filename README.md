@@ -30,7 +30,7 @@ While this type of app is very common, and I expect some exaggerated eye-rolling
 
 ### Console
 
-**Because databases and servers don't need to look fancy.**
+**Because databases and servers are glorious, but subtle.**
 ![Flix: a way to show the database working](https://github.com/RubinJhand/movie-app/blob/master/docs/images/FlixConsole.png)
 
 ## Dependencies
