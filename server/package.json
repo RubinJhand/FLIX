@@ -1,5 +1,5 @@
 {
-  "name": "movie-app-server",
+  "name": "flix-server",
   "version": "1.0.0",
   "description": "",
   "main": "src/server.js",
@@ -9,7 +9,6 @@
     "db:reset": "npx sequelize-cli db:drop && npx sequelize-cli db:create && npx sequelize-cli db:migrate && npx sequelize-cli db:seed:all"
   },
   "keywords": [
-    "movies",
     "node",
     "express",
     "sequelize",
