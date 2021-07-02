@@ -2,7 +2,7 @@ import styled, { css } from 'styled-components';
 
 export const Container = styled.div`
   position: relative;
-  top: 0;
+  top: 8.4em;
   left: 0;
   right: 0;
 

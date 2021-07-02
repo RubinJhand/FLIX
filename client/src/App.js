@@ -8,6 +8,7 @@ import { MediaTypeProvider } from './contexts/mediaTypeContext';
 // Containers
 import HeaderContainer from './containers/HeaderContainer';
 import MainContainer from './containers/MainContainer';
+import SlidesContainer from './containers/SlidesContainer';
 
 const App = () => {
   return (
@@ -20,9 +21,11 @@ const App = () => {
               <MainContainer />
             </Route>
             <Route exact path='/tv/:genre'>
+              <SlidesContainer />
               <MainContainer />
             </Route>
             <Route exact path='/movies/:genre'>
+              <SlidesContainer />
               <MainContainer />
             </Route>
           </Switch>

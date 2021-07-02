@@ -14,11 +14,12 @@ export const Grid = styled.div`
 
   @media (max-width: 600px) {
     grid-template-columns: 1fr;
-    /* margin: 12em 1.5em 3em 1.5em; */
   }
 `;
 
 export const Container = styled.div`
   position: relative;
   top: 8em;
+
+  margin-bottom: 20em;
 `;
