@@ -16,9 +16,6 @@ export const categoryShowAll = async (req, res) => {
     });
     const { redirect, data } = findCategory;
 
-    // if (redirect) return res.redirect(`${DB_REFRESH_PATH}/delete`);
-    // if (!redirect) return res.json({ data });
-
     if (redirect) {
       if (mediaType)
         return res.redirect(`${DB_REFRESH_PATH}/delete/${mediaType}/${genre}`);
@@ -72,9 +69,6 @@ export const categoryShowAllMovies = async (req, res) => {
       }
     });
     const { redirect, data } = findCategoryMovies;
-
-    // if (redirect) return res.redirect(`${DB_REFRESH_PATH}/delete`);
-    // if (!redirect) return res.json({ data });
 
     if (redirect) {
       if (mediaType)

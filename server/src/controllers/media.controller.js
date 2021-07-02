@@ -1,11 +1,6 @@
 import { DB_REFRESH_PATH, API_CURRENT_VERSION } from '../constants';
 
-import {
-  mediaFindAll,
-  mediaFindById,
-  mediaBulkCreate,
-  mediaDestroy
-} from '../services';
+import { mediaFindAll, mediaBulkCreate, mediaDestroy } from '../services';
 
 export const mediaShowAll = async (req, res) => {
   try {
