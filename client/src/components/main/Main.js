@@ -1,4 +1,5 @@
 import React from 'react';
+
 import { Grid, Container } from './main.styles';
 
 const Main = ({ children, ...restProps }) => {

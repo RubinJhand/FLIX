@@ -60,7 +60,8 @@ export const SearchSpan = styled.span`
     color: var(--white);
     transition: filter 400ms linear;
 
-    &:hover {
+    &:hover,
+    &:focus {
       filter: brightness(100%);
     }
   }

@@ -158,7 +158,8 @@ export const Text = styled.span`
       isMenuOpen ? 'rotate(-180deg)' : 'rotate(0)'};
   }
 
-  &:hover {
+  &:hover,
+  &:focus {
     filter: brightness(100%);
   }
 `;

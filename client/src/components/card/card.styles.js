@@ -12,7 +12,8 @@ export const Box = styled.div`
 
   transition: transform 400ms ease-in-out 300ms;
 
-  &:hover {
+  &:hover,
+  &:focus {
     z-index: 200;
     transform: scale(1.05);
   }
@@ -37,7 +38,8 @@ export const Border = styled.div`
 
   transition: border 400ms ease-in-out 400ms, box-shadow 400ms ease-in-out;
 
-  &:hover {
+  &:hover,
+  &:focus {
     position: absolute;
     top: 0;
     left: 0;
@@ -50,7 +52,8 @@ export const Border = styled.div`
       0px 30px 22px -10px rgba(0, 0, 0, 0.72);
   }
 
-  &:hover {
+  &:hover,
+  &:focus {
     > div > div > iframe {
       position: relative;
 

@@ -1,4 +1,6 @@
 import React, { createContext, useContext, useMemo } from 'react';
+
+// Hooks
 import useAxiosFetch from '../hooks/useAxiosFetch';
 
 export const ApiDataContext = createContext();

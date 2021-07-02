@@ -76,7 +76,8 @@ export const IconWrap = styled.span`
     transition: transform 400ms ease-in-out;
   }
 
-  &:hover {
+  &:hover,
+  &:focus {
     > svg {
       transform: scale(1);
     }
@@ -105,7 +106,8 @@ export const Text = styled.span`
     css`
       filter: brightness(50%);
       z-index: 70;
-      &:hover {
+      &:hover,
+      &:focus {
         color: var(--primary);
       }
     `};
@@ -121,7 +123,8 @@ export const Text = styled.span`
 
   transition: filter 400ms linear, color 400ms linear;
 
-  &:hover {
+  &:hover,
+  &:focus {
     filter: brightness(100%);
   }
 `;

@@ -1,4 +1,6 @@
 import { useState, useEffect, useReducer } from 'react';
+
+// Misc.
 import { axios } from '../utils/axios';
 
 const ACTIONS = {

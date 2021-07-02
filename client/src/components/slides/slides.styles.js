@@ -146,7 +146,8 @@ export const Button = styled.button`
       }
     `};
 
-  &:hover {
+  &:hover,
+  &:focus {
     transition: opacity 400ms linear;
     opacity: 1;
   }
