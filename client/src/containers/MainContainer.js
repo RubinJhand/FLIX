@@ -1,19 +1,29 @@
 import React from 'react';
 
 // Hooks and Contexts
-import { useApiData } from '../hooks/useApiData';
+import useApiData from '../hooks/useApiData';
 
 // Components
 import Main from '../components/main/Main';
 import CardContainer from './CardContainer';
 
 const MainContainer = () => {
-  const [results] = useApiData();
+  const [results, setUrl] = useApiData();
 
   return (
     <Main>
       <Main.Grid>
-        <CardContainer results={results} />
+        {results?.data?.map(
+          (result, index) =>
+            result.backdrop_url && (
+              <CardContainer
+                key={result.tmdb_id}
+                result={result}
+                index={index}
+                setUrl={setUrl}
+              />
+            )
+        )}
       </Main.Grid>
     </Main>
   );

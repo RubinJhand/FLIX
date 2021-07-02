@@ -12,7 +12,10 @@ import ArrowBackIosIcon from '@material-ui/icons/ArrowBackIos';
 import ArrowForwardIosIcon from '@material-ui/icons/ArrowForwardIos';
 
 const SlidesContainer = () => {
-  const { mediaArray, handleNext, handlePrevious, imgIndex } = useTimedSlides();
+  const { mediaArray, handleNext, handlePrevious, imgIndex } = useTimedSlides(
+    5,
+    true
+  );
   const overview = mediaArray[imgIndex]?.overview.split('. ');
 
   return (

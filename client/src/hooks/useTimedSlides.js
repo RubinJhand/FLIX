@@ -4,13 +4,14 @@ import { useState, useEffect } from 'react';
 import useMediaType from './useMediaType';
 import useAxiosFetch from './useAxiosFetch';
 
-const useTimedSlides = () => {
+const useTimedSlides = (seconds, initiateTimer = false) => {
   const { mediaType } = useMediaType();
   const [data] = useAxiosFetch('category/popular');
   const [slides, setSlides] = useState([]);
   const [imgIndex, setImgIndex] = useState(0);
   let tvImageUrlsArray = [];
   let movieImageUrlsArray = [];
+  const convertedToMilliseconds = seconds * 1000;
 
   useEffect(() => {
     data && setSlides(data.data);
@@ -37,15 +38,17 @@ const useTimedSlides = () => {
   const mediaArrayIndexLength = mediaArray.length - 1;
 
   useEffect(() => {
-    const sliderTimer = setTimeout(() => {
-      if (mediaArrayIndexLength === imgIndex) {
-        setImgIndex(0);
-      }
-      setImgIndex((imgIndex) => imgIndex + 1);
-    }, 10000);
+    if (initiateTimer) {
+      const sliderTimer = setTimeout(() => {
+        if (mediaArrayIndexLength === imgIndex) {
+          setImgIndex(0);
+        }
+        setImgIndex((imgIndex) => imgIndex + 1);
+      }, convertedToMilliseconds);
 
-    return () => clearTimeout(sliderTimer);
-  }, [imgIndex, mediaArrayIndexLength]);
+      return () => clearTimeout(sliderTimer);
+    }
+  }, [imgIndex, mediaArrayIndexLength, initiateTimer, convertedToMilliseconds]);
 
   const handlePrevious = () => {
     if (imgIndex !== 0) {

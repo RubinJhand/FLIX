@@ -25,6 +25,11 @@ const NavbarContainer = ({ isMobileMenu }) => {
 
   const handleChangeGenre = (genre) => {
     setUrl(`category/${mediaType}/${genre}`);
+
+    document.title = `FLIX ${mediaType.replace(
+      /^./,
+      mediaType[0].toUpperCase()
+    )}: ${genre}`;
   };
 
   return (

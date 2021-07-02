@@ -9,6 +9,7 @@ import { MediaTypeProvider } from './contexts/mediaTypeContext';
 import HeaderContainer from './containers/HeaderContainer';
 import MainContainer from './containers/MainContainer';
 import SlidesContainer from './containers/SlidesContainer';
+import DetailsContainer from './containers/DetailsContainer';
 
 const App = () => {
   return (
@@ -31,6 +32,9 @@ const App = () => {
             <Route exact path='/search/:search'>
               <SlidesContainer />
               <MainContainer />
+            </Route>
+            <Route exact path='/details/:details'>
+              <DetailsContainer />
             </Route>
           </Switch>
         </MediaTypeProvider>
