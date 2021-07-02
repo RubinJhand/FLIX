@@ -1,7 +1,7 @@
 import React from 'react';
 
 // Hooks and Contexts
-import useMediaTimer from '../hooks/useTimedSlides';
+import useTimedSlides from '../hooks/useTimedSlides';
 
 // Components
 import Slides from '../components/slides/Slides';
@@ -12,7 +12,7 @@ import ArrowBackIosIcon from '@material-ui/icons/ArrowBackIos';
 import ArrowForwardIosIcon from '@material-ui/icons/ArrowForwardIos';
 
 const SlidesContainer = () => {
-  const { mediaArray, handleNext, handlePrevious, imgIndex } = useMediaTimer();
+  const { mediaArray, handleNext, handlePrevious, imgIndex } = useTimedSlides();
   const overview = mediaArray[imgIndex]?.overview.split('. ');
 
   return (
