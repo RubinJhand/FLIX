@@ -3,12 +3,7 @@ import cors from 'cors';
 
 import CORS_CONFIG from './cors.config';
 import { API_CURRENT_VERSION, DB_REFRESH_PATH } from '../constants';
-import {
-  MediaRoutes,
-  CategoryRoutes,
-  RefreshRoutes,
-  SearchRoutes
-} from '../routes';
+import { CategoryRoutes, RefreshRoutes, SearchRoutes } from '../routes';
 
 const app = express();
 
@@ -18,7 +13,6 @@ app.use(json());
 app.use(urlencoded({ extended: true }));
 
 // ----- Routes -----
-app.use(API_CURRENT_VERSION, MediaRoutes);
 app.use(API_CURRENT_VERSION, CategoryRoutes);
 app.use(API_CURRENT_VERSION, SearchRoutes);
 

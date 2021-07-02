@@ -13,4 +13,4 @@ router.get('/media/tv', mediaShowTv);
 router.get('/media/movies', mediaShowMovie);
 router.get('/media/:id', mediaShowOne);
 
-export default router;
+// export default router;
