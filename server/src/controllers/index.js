@@ -6,3 +6,9 @@ export {
   mediaCreateBulk,
   mediaDeleteAll
 } from './media.controller';
+
+export {
+  categoryShowAll,
+  categoryShowAllMovies,
+  categoryShowAllTv
+} from './category.controller';

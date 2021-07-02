@@ -3,7 +3,7 @@ import {
   categoryShowAll,
   categoryShowAllTv,
   categoryShowAllMovies
-} from '../controllers/category.controller';
+} from '../controllers';
 
 const router = Router();
 
