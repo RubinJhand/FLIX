@@ -4,9 +4,9 @@ import { useState, useEffect } from 'react';
 import useMediaType from './useMediaType';
 import useAxiosFetch from './useAxiosFetch';
 
-const useMediaTimer = () => {
+const useTimedSlides = () => {
   const { mediaType } = useMediaType();
-  const [data] = useAxiosFetch('popular');
+  const [data] = useAxiosFetch('category/popular');
   const [slides, setSlides] = useState([]);
   const [imgIndex, setImgIndex] = useState(0);
   let tvImageUrlsArray = [];
@@ -71,4 +71,4 @@ const useMediaTimer = () => {
   };
 };
 
-export default useMediaTimer;
+export default useTimedSlides;

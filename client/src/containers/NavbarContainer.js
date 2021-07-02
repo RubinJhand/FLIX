@@ -24,7 +24,7 @@ const NavbarContainer = ({ isMobileMenu }) => {
     mediaType === 'tv' ? providerMenuItems : collectionMenuItems;
 
   const handleChangeGenre = (genre) => {
-    setUrl(`${mediaType}/${genre}`);
+    setUrl(`category/${mediaType}/${genre}`);
   };
 
   return (
