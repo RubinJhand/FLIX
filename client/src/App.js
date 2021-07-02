@@ -28,6 +28,10 @@ const App = () => {
               <SlidesContainer />
               <MainContainer />
             </Route>
+            <Route exact path='/search/:search'>
+              <SlidesContainer />
+              <MainContainer />
+            </Route>
           </Switch>
         </MediaTypeProvider>
       </ApiDataProvider>
