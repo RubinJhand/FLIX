@@ -2,6 +2,8 @@
 
 # FLIX
 
+[![Open in Visual Studio Code](https://open.vscode.dev/badges/open-in-vscode.svg)](https://open.vscode.dev/RubinJhand/FLIX)
+
 FLIX is a responsive web app for viewing categories and genres of various films and series. Users can search and see recommendations based on the selected film or series. Cards are styled to resemble widescreen televisions and/or cinema screens. The server queries the API and stores the data, after formatting, in the database. The frontend only communicates with the server.
 
 ## Motivation
