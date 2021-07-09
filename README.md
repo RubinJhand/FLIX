@@ -10,7 +10,11 @@ FLIX is a responsive web app for viewing categories and genres of various films 
 
 ---
 
-While this type of app is very common, and I expect some exaggerated eye-rolling, I chose to create this app to learn: Figma, Inkscape, and become more familiar with Babel for Sequelize and Express (ES6). I created the popcorn logo svg and I also improved my skills with: Styled Components, React, CSS, Sequelize, Postgres, Express, and coded with readability in mind.
+While this type of app is very common, (feel free to roll your eyes), I chose to create this app for several reasons:
+
+- To learn Figma and Inkscape (for creating the svg logo), because creating a front-end without a concrete plan is craziness.
+- Become more familiar with using Babel for transpiling Sequelize and Express (ES6).
+- And finally, to continue improving my skills with: Styled Components, React, CSS, Sequelize, Postgres, Express, and coded with readability in mind.
 
 ## Screenshots
 
